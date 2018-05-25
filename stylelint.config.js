@@ -26,5 +26,6 @@ module.exports = {
         "include"
       ]
     }],
+    "no-descending-specificity": null,
   }
 }
