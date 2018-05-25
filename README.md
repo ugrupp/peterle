@@ -1,4 +1,4 @@
-# peterle Website 🍽
+# peterle Website 🏨
 
 **Website for Hotel & Restaurant Peterle http://www.hotel-peterle.de/**
 
