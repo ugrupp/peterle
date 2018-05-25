@@ -1,0 +1,6 @@
+[build]
+  command = "gulp build"
+  publish = "dist"
+
+[context.deploy-preview]
+  command = "gulp build-preview"

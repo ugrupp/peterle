@@ -96,7 +96,7 @@ All tasks starting with *build* set the environment variable to `production` - t
 Prepares SVGs for use within SVG sprite:
 
 ```
-svgo ./logo-farbig.svg -o ../../grashobber/src/images/svg/logo-farbig.svg --config '{ "plugins": [ { "inlineStyles": { "onlyMatchedOnce": false } }] }'
+svgo ./logo-farbig.svg -o ../../peterle/src/images/svg/logo-farbig.svg --config '{ "plugins": [ { "inlineStyles": { "onlyMatchedOnce": false } }] }'
 ```
 
 ## Enjoy!! 😸
