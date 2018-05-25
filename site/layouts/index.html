@@ -1,8 +1,11 @@
 {{ define "main" }}
-  {{ partial "components/hero" . }}
+  {{/* Get headless home bundle which holds the content */}}
+  {{ with .Site.GetPage "page" "home" }}
+    {{ partial "components/hero" . }}
 
-  <div class="o-main__content">
-    Main content
-  </div>
+    <div class="o-main__content">
+      {{ partial "sections/home/socialwall.html" . }}
+    </div>
+  {{ end }}
 {{ end }}
 

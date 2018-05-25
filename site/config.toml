@@ -2,19 +2,15 @@ baseurl = "/"
 DefaultContentLanguage = "de"
 title = "Hotel & Restaurant Peterle"
 
+enableRobotsTXT = true
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
 [languages]
   [languages.de]
     weight = 1
 
   [languages.en]
     weight = 2
-
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details:
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
-
-enableRobotsTXT = true
 
 [params]
   facebookURL = "https://www.facebook.com/pages/Hotel-Peterle/132155553500218"

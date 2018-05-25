@@ -1,0 +1,18 @@
+{{/* Social wall */}}
+
+<section>
+  <div class="c-socialwall" data-reveal>
+    {{ with .Resources.GetMatch "socialwall*.md" }}
+
+      {{ .Title }}
+
+      <div class="c-socialwall__wall">
+        <div class="o-container">
+          <div class="c-socialwall__wall-inner">
+            {{/* Feed */}}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>
