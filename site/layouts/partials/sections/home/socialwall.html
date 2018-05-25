@@ -1,18 +1,10 @@
-{{/* Social wall */}}
+<div class="c-socialwall">
+  {{ with .Resources.GetMatch "socialwall*.md" }}
+    <h2 class="c-headline">{{ .Params.title }}</h2>
 
-<section>
-  <div class="c-socialwall" data-reveal>
-    {{ with .Resources.GetMatch "socialwall*.md" }}
-
-      {{ .Title }}
-
-      <div class="c-socialwall__wall">
-        <div class="o-container">
-          <div class="c-socialwall__wall-inner">
-            {{/* Feed */}}
-          </div>
-        </div>
-      </div>
-    {{ end }}
-  </div>
-</section>
+    <div class="c-socialwall__wall">
+      {{/* Feed */}}
+      Socialwall
+    </div>
+  {{ end }}
+</div>

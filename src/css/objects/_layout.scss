@@ -19,6 +19,30 @@
   margin-top: 100vh;
 }
 
+// scroll hint
+.o-main__scroll-hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: rem(16px);
+
+  @include mappy-bp(md) {
+    top: rem(40px);
+  }
+}
+
+// default section
+.o-main__section {
+  background-color: $color-white;
+  padding-top: rem(100px);
+  padding-bottom: rem(100px);
+
+  @include mappy-bp(md) {
+    padding-top: rem(160px);
+    padding-bottom: rem(160px);
+  }
+}
+
 // default top section
 .o-main__section--top {
   background-color: $color-brown-lightest;
@@ -26,11 +50,7 @@
   background-repeat: no-repeat;
   background-position: left top;
 
-  padding-top: rem(100px);
-  padding-bottom: rem(100px);
-
   @include mappy-bp(md) {
     padding-top: rem(240px);
-    padding-bottom: rem(160px);
   }
 }

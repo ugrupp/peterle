@@ -1,0 +1,21 @@
+//
+// Scroll hint
+// --------------------------------------------------
+
+.c-scroll-hint {
+  color: $color-content-ci;
+
+  width: rem(32px);
+  height: rem(8px);
+
+  svg {
+    height: 100%;
+    width: 100%;
+    transform: translateX(rem(7px)) rotate(90deg);
+    transform-origin: left top;
+  }
+}
+
+.c-scroll-hint--inverted {
+  color: $color-white;
+}
