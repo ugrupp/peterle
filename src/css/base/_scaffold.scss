@@ -22,7 +22,7 @@ body {
   // fallback font for initial render to avoid FOIT
   font-family: $font-family-base-fallback;
 
-  // fonts-loaded flag, triggered by JS (fontfaceobserver)
+  // fonts-loaded flag, triggered by JS (typekit)
   .wf-active & {
     font-family: $font-family-base;
   }

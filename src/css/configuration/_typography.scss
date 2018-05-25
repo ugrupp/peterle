@@ -9,9 +9,9 @@ $font-weight-black: 900;
 
 // Font Families
 $font-family-base-fallback: 'Trebuchet MS', sans-serif;
-$font-family-base: 'kozuka-gothic-pro', sans-serif;
-$font-family-ci-fallback: 'Impact', sans-serif;
-$font-family-ci: 'League Gothic', sans-serif;
+$font-family-base: 'ff-meta-web-pro', 'Trebuchet MS', sans-serif;
+$font-family-ci-fallback: 'Georgia', serif;
+$font-family-ci: 'pt-serif', 'Georgia', serif;
 
 // Tell Typi to use mappy-breakpoints
 $typi-breakpoint: mappy-bp;

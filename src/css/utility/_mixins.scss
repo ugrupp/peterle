@@ -15,8 +15,8 @@
 @mixin font-ci {
   font-family: $font-family-ci-fallback;
 
-  // fonts-loaded body flag, triggered by JS (fontfaceobserver)
-  .has-loaded-fonts-ci & {
+  // fonts-loaded body flag, triggered by JS (typekit)
+  .wf-active & {
     font-family: $font-family-ci;
   }
 }
