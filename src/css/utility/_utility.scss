@@ -1,0 +1,13 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+.u-invisible {
+  margin: -3px;
+  position: absolute;
+  text-indent: 100%;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  display: block;
+}

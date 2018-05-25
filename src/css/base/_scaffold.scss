@@ -1,0 +1,39 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+// sets base font-sizing on html element
+@include typi-init;
+
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $color-content;
+
+  // fallback font for initial render to avoid FOIT
+  font-family: $font-family-base-fallback;
+
+  // fonts-loaded flag, triggered by JS (fontfaceobserver)
+  .wf-active & {
+    font-family: $font-family-base;
+  }
+}
+
+::selection {
+  background: $color-green-light;
+  color: $color-white;
+}
+
+// Ensure elements load hidden before ScrollReveal runs
+html.sr [data-reveal] {
+  visibility: hidden;
+}

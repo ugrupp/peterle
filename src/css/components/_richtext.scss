@@ -1,0 +1,56 @@
+//
+// Richtext
+// --------------------------------------------------
+
+.c-richtext {
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    &:not(:first-child) {
+      margin-bottom: 4em;
+    }
+
+    &:not(:last-child) {
+      margin-top: 4em;
+    }
+  }
+
+  strong {
+    font-weight: $font-weight-bold;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  p,
+  table {
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+
+  a {
+    color: $color-content-ci;
+    transition: all $transition-time-default;
+
+    &:hover,
+    &:focus {
+      opacity: .8;
+    }
+  }
+
+  em {
+    font-style: italic;
+  }
+}
+
+.c-richtext--sm {
+  @include typi(sm);
+}

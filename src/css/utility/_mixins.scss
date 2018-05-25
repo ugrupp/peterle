@@ -1,0 +1,39 @@
+//
+// Mixins
+// --------------------------------------------------
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin no-font-smoothing {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+@mixin font-ci {
+  font-family: $font-family-ci-fallback;
+
+  // fonts-loaded body flag, triggered by JS (fontfaceobserver)
+  .has-loaded-fonts-ci & {
+    font-family: $font-family-ci;
+  }
+}
+
+// Reset all default button styles
+@mixin button-reset {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  user-select: none;
+  white-space: normal;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,26 @@
+//
+// General settings
+// --------------------------------------------------
+
+// Breakpoints
+$breakpoints: (
+  'xs': 480px,
+  'sm': 768px,
+  'md': 1025px,
+  'lg': 1200px,
+  'xl': 1400px
+);
+
+// Transition timing
+$transition-time-default: .2s;
+$transition-time-medium: .5s;
+$transition-time-long: .8s;
+
+// z-index indexes
+$z-index: hero, content, main, footer, topbar, menu;
+
+// Sizes
+$container-gutter: 20px;
+$container-width-default: 1500px;
+$container-width-medium: 1200px;
+$container-width-narrow: 1200px;

@@ -1,0 +1,50 @@
+//
+// Typography settings
+// --------------------------------------------------
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Font Families
+$font-family-base-fallback: 'Trebuchet MS', sans-serif;
+$font-family-base: 'kozuka-gothic-pro', sans-serif;
+$font-family-ci-fallback: 'Impact', sans-serif;
+$font-family-ci: 'League Gothic', sans-serif;
+
+// Tell Typi to use mappy-breakpoints
+$typi-breakpoint: mappy-bp;
+
+// Font Sizing
+/* stylelint-disable value-list-max-empty-lines */
+$typi: (
+  // Base for <html>, will be inherited
+  base: (
+    null: (16px, 1.6)
+  ),
+
+  sm: (
+    null: (14px, 1.6)
+  ),
+
+  headline--default: (
+    null: (35px, 1.1),
+    xs: (45px),
+    sm: (65px),
+  ),
+
+  headline--sm: (
+    null: (35px, 1.1),
+    md: (45px),
+  ),
+
+  headline--xs: (
+    null: (22px, 1.1),
+  ),
+
+  headline--xxs: (
+    null: (20px, 1.1),
+  ),
+);
+/* stylelint-enable */

@@ -1,0 +1,32 @@
+//
+// Typography components
+// --------------------------------------------------
+
+// Headlines
+.c-headline {
+  @include font-ci;
+  @include typi('headline--default');
+  display: block;
+
+  span.br {
+    display: block;
+  }
+
+  span.br-md {
+    @include mappy-bp(md) {
+      display: block;
+    }
+  }
+}
+
+.c-headline--sm {
+  @include typi('headline--sm');
+}
+
+.c-headline--xs {
+  @include typi('headline--xs');
+}
+
+.c-headline--xxs {
+  @include typi('headline--xxs');
+}
