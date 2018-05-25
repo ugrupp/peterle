@@ -1,0 +1,21 @@
+//
+// Separator dots
+// --------------------------------------------------
+
+
+.c-separator {
+  display: flex;
+
+  svg {
+    height: rem(11px);
+    width: rem(11px);
+  }
+
+  svg + svg {
+    margin-left: rem(10px);
+  }
+}
+
+.c-separator--inverted {
+  color: $color-white;
+}

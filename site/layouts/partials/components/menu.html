@@ -1,17 +1,10 @@
-{{ if .Params.inverted }}
-  {{ .Scratch.Set "menuElements" (dict "classes" "c-menu--inverted" "menu" "schliessen") }}
-{{ else }}
-  {{ .Scratch.Set "menuElements" (dict "classes" "" "menu" "schliessen-weiss") }}
-{{ end }}
-
-<div class='c-menu {{ (.Scratch.Get "menuElements").classes }}' id="menu" data-menu>
-  {{/* Menu closer */}}
-  <div class="c-menu__container o-container">
-    <a href="#main" class="c-menu__closer" data-menu-closer>
-      {{ partial "util/svg" (dict "svg" (.Scratch.Get "menuElements").menu) }}
-      <span class="u-invisible">Menü schließen</span>
-    </a>
-  </div>
+<div class='c-menu' id="menu" data-menu>
+  {{/* Menu toggler */}}
+  <a href="#main" class="c-menu__toggler" data-menu-toggler>
+    {{ partial "components/svg" (dict "svg" "menu") }}
+    {{ partial "components/svg" (dict "svg" "close") }}
+    <span class="u-invisible">Menü öffnen/schließen</span>
+  </a>
 
   <nav class="c-menu__inner c-menu__container o-container">
     {{/* Main menu */}}
@@ -19,18 +12,24 @@
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
         <li>
+          {{ partial "components/svg" (dict "svg" "trenner") }}
+
           <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"
               href="{{ .URL }}">
-            {{ .Name }}
+            {{ .Title }}
           </a>
         </li>
       {{ end }}
     </ul>
 
 
-    {{/* Social menu */}}
-    <div class="c-menu__social">
-      {{ partial "components/socialicons" (dict "context" . "inverted" .Params.inverted "stacked" 1) }}
+    {{/* Meta menu */}}
+    <div class="c-menu__meta">
+      <div class="c-menu__separator">
+        <hr />
+        {{ partial "components/separator" }}
+      </div>
+      {{ partial "components/meta-menu" (dict "context" . "mode" "vertical") }}
     </div>
   </nav>
 </div>

@@ -1,0 +1,177 @@
+//
+// Menu
+// --------------------------------------------------
+
+.c-menu__toggler {
+  display: block;
+  position: relative;
+  width: rem(40px);
+  height: rem(40px);
+
+  @include mappy-bp($bp-menu-collapse) {
+    display: none;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    transition: all $transition-time-default;
+    transform: translate3d(0, 0, 0);
+
+    // burger
+    &:first-of-type {
+      .is-open & {
+        transform: scale(.75);
+        opacity: 0;
+      }
+    }
+
+    // close
+    &:last-of-type {
+      transform: scale(.75);
+      opacity: 0;
+
+      .is-open & {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+.c-menu__inner {
+  position: absolute;
+  z-index: index($z-index, menu);
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: calc(100vh - 100%); // viewport height - topbar height
+
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-top: rem(110px);
+  padding-bottom: rem(50px);
+  background-color: rgba(255, 255, 255, .95);
+
+  display: none;
+
+  .is-open & {
+    display: block;
+  }
+
+  @include mappy-bp($bp-menu-collapse) {
+    display: block;
+    position: static;
+    background-color: transparent;
+    height: auto;
+    overflow: visible;
+    padding: 0;
+  }
+}
+
+.c-menu__main {
+  @include mappy-bp($bp-menu-collapse) {
+    display: flex;
+  }
+
+  /* stylelint-disable no-descending-specificity */
+  svg {
+    display: none;
+    height: rem(11px);
+    width: rem(11px);
+    margin-left: rem(30px);
+    margin-right: rem(30px);
+
+    @include mappy-bp(lg) {
+      margin-left: rem(40px);
+      margin-right: rem(40px);
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  li + li {
+    margin-top: rem(20px);
+
+    @include mappy-bp($bp-menu-collapse) {
+      margin-top: 0;
+
+      svg {
+        display: block;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    @include typi('menu');
+    color: $color-gray-6;
+    @include font-smoothing;
+
+    &:hover,
+    &:focus {
+      color: $color-gray-6;
+    }
+
+    &.active {
+      color: $color-content-ci;
+    }
+
+    @include mappy-bp($bp-menu-collapse) {
+      position: relative;
+      transition: all $transition-time-default;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: rem(20px);
+        height: rem(1px);
+        background-color: $color-content-ci;
+
+        transition: all $transition-time-default;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: left center;
+      }
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: $color-content-ci;
+
+        &::before {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+// Meta menu
+.c-menu__meta {
+  @include mappy-bp($bp-menu-collapse) {
+    display: none;
+  }
+}
+
+.c-menu__separator {
+  margin-bottom: rem(50px);
+  margin-top: rem(100px);
+
+  hr {
+    display: none;
+  }
+}
