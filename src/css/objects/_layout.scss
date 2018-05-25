@@ -1,3 +1,25 @@
 //
 // Layout
 // --------------------------------------------------
+
+.o-main__content {
+  position: relative;
+  z-index: index($z-index, content);
+
+  background-color: $color-brown-lightest;
+  background-image: url('/images/layout/muster-links.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  // default: top-spacing to match fixed topbar
+  margin-top: $topbar-alpha-height;
+
+  @include mappy-bp(max $bp-menu-collapse) {
+    margin-top: $topbar-alpha-height + $topbar-beta-height;
+  }
+}
+
+// top-spacing to match fixed hero
+.c-hero + .o-main__content {
+  margin-top: 100vh;
+}
