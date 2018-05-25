@@ -1,0 +1,49 @@
+<section class="o-main__section o-main__section--top">
+  <div class="o-container">
+    <div class="c-teasers" data-reveal>
+      {{ with .Resources.GetMatch "teasers*.md" }}
+        <div class="c-teasers__grid o-grid">
+          {{/* First cell: intro */}}
+          <div class="o-grid__col">
+            <div class="c-richtext">
+              {{ .Content }}
+            </div>
+          </div>
+
+          {{/* Other cells: Teasers */}}
+          {{ range .Params.teasers }}
+            {{ $title := .title }}
+
+            <div class="o-grid__col">
+              <a href="{{ .url }}" class="c-teaser">
+                {{/* Image */}}
+                <div class="c-teaser__img-wrapper">
+                  {{ with $.Resources.GetMatch .image }}
+                    {{ $imageSmall := .Resize "500x" }}
+                    {{ $imageMedium := .Resize "800x" }}
+
+                    <img
+                      alt="{{ $title }}"
+                      src="{{ $imageSmall.RelPermalink }}"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                      data-sizes="auto"
+                      class="c-teaser__img lazyload" />
+                  {{ end }}
+                </div>
+
+                {{/* Button */}}
+                <div class="c-teaser__button">
+                  <span class="c-button">
+                    {{ $title }}
+                    {{ partial "components/svg" (dict "svg" "pfeil") }}
+                  </span>
+                </div>
+              </a>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -6,11 +6,6 @@
   position: relative;
   z-index: index($z-index, content);
 
-  background-color: $color-brown-lightest;
-  background-image: url('/images/layout/muster-links.png');
-  background-repeat: no-repeat;
-  background-position: left top;
-
   // default: top-spacing to match fixed topbar
   margin-top: $topbar-alpha-height;
 
@@ -22,4 +17,20 @@
 // top-spacing to match fixed hero
 .c-hero + .o-main__content {
   margin-top: 100vh;
+}
+
+// default top section
+.o-main__section--top {
+  background-color: $color-brown-lightest;
+  background-image: url('/images/layout/muster-links.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  padding-top: rem(100px);
+  padding-bottom: rem(100px);
+
+  @include mappy-bp(md) {
+    padding-top: rem(240px);
+    padding-bottom: rem(160px);
+  }
 }

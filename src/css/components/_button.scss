@@ -1,0 +1,23 @@
+//
+// Button
+// --------------------------------------------------
+
+.c-button {
+  @include button-reset;
+
+  @include typi('button');
+  background-color: $color-content-ci;
+  color: $color-white;
+  @include font-smoothing;
+  padding: rem(24px);
+  transition: background-color $transition-time-default;
+
+  display: inline-flex;
+  align-items: center;
+
+  svg {
+    margin-left: rem(24px);
+    width: rem(32px);
+    height: rem(8px);
+  }
+}

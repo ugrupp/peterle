@@ -25,15 +25,18 @@
 // Objects
 @import 'objects/container';
 @import 'objects/layout';
+@import 'objects/grid';
 @import 'objects/icon';
 
-// Components (functional & static)
+// Components (content)
 @import 'components/headline';
 @import 'components/richtext';
+@import 'components/separator';
+@import 'components/button';
+@import 'components/hero';
+@import 'components/teasers';
+
+// Components (static)
 @import 'components/topbar';
 @import 'components/meta-menu';
 @import 'components/menu';
-
-// Components (content)
-@import 'components/hero';
-@import 'components/separator';
