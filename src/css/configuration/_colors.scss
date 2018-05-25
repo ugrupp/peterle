@@ -7,25 +7,13 @@ $color-black: #000;
 $color-white: #fff;
 
 // Shades of gray
-$color-gray-f: #f5f5f4;
-$color-gray-e: #e5e2e2;
-$color-gray-d: #dedcdb;
-$color-gray-9: #999591;
+$color-gray-6: #6e7074;
 
 // Brand colors
-$color-green-default: #97c420;
-$color-green-light: #bdd34d;
-$color-green-dark: #567029;
-$color-green-muted: #618d39;
-$color-green-blue: #5c7a5b;
-$color-green-overlayed: #9cc72d; // works with rgba($color-content-ci, .95);
+$color-brown-default: #6e5e50;
+$color-brown-lightest: #f6f4f3;
+$color-brown-lighter: #edeae7;
 
 // Content color mapping
-$color-content: $color-gray-9;
-$color-content-ci: $color-green-default;
-
-// Overlay colors
-$color-ci-overlay: rgba($color-content-ci, .95);
-$color-white-overlay: rgba($color-white, .95);
-$color-gray-overlay: rgba($color-gray-f, .9);
-
+$color-content: $color-gray-6;
+$color-content-ci: $color-brown-default;
