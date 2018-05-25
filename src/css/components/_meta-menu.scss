@@ -1,0 +1,41 @@
+//
+// Meta Menu
+// --------------------------------------------------
+
+.c-meta-menu--horizontal {
+  display: flex;
+}
+
+.c-meta-menu__item {
+  // Horizontal mode
+  .c-meta-menu--horizontal & {
+    display: flex;
+    align-items: baseline;
+
+    &:not(:first-of-type)::before {
+      opacity: .5;
+      content: '—';
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+  }
+
+  // Vertical mode
+  .c-meta-menu--vertical & {
+    &:not(:first-of-type) {
+      margin-top: .75em;
+    }
+  }
+}
+
+.c-meta-menu__link {
+  display: block;
+  color: inherit;
+  opacity: .5;
+  transition: opacity $transition-time-default;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}

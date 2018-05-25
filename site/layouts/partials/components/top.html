@@ -1,1 +1,32 @@
-top
+<div class='c-topbar' data-topbar>
+  {{/* Logo */}}
+  <div class="o-container">
+    <div class="c-topbar__logo-inner">
+      <a href="/" class="c-topbar__logo">
+        {{ partial "components/svg" (dict "svg" "logo") }}
+        <span class="u-invisible">Hotel &amp; Restaurant Peterle</span>
+      </a>
+    </div>
+  </div>
+
+  {{/* Beta topbar */}}
+  <div class="c-topbar__beta">
+    <div class="c-topbar__beta-container o-container">
+      <div class="c-topbar__beta-inner">
+        {{/* Meta Menu */}}
+        {{ partial "components/meta-menu" (dict "context" . "mode" "horizontal") }}
+      </div>
+    </div>
+  </div>
+
+  {{/* Alpha topbar */}}
+  <div class="c-topbar__alpha">
+    <div class="c-topbar__alpha-container o-container">
+      <div class="c-topbar__alpha-inner">
+        {{/* Menu */}}
+        Menu
+        {{/* partial "components/meta-menu" (dict "context" . "mode" "vertical") */}}
+      </div>
+    </div>
+  </div>
+</div>

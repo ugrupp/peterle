@@ -1,0 +1,36 @@
+{{ if .Params.inverted }}
+  {{ .Scratch.Set "menuElements" (dict "classes" "c-menu--inverted" "menu" "schliessen") }}
+{{ else }}
+  {{ .Scratch.Set "menuElements" (dict "classes" "" "menu" "schliessen-weiss") }}
+{{ end }}
+
+<div class='c-menu {{ (.Scratch.Get "menuElements").classes }}' id="menu" data-menu>
+  {{/* Menu closer */}}
+  <div class="c-menu__container o-container">
+    <a href="#main" class="c-menu__closer" data-menu-closer>
+      {{ partial "util/svg" (dict "svg" (.Scratch.Get "menuElements").menu) }}
+      <span class="u-invisible">Menü schließen</span>
+    </a>
+  </div>
+
+  <nav class="c-menu__inner c-menu__container o-container">
+    {{/* Main menu */}}
+    <ul class="c-menu__main">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        <li>
+          <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"
+              href="{{ .URL }}">
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+
+    {{/* Social menu */}}
+    <div class="c-menu__social">
+      {{ partial "components/socialicons" (dict "context" . "inverted" .Params.inverted "stacked" 1) }}
+    </div>
+  </nav>
+</div>

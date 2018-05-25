@@ -7,13 +7,13 @@
   padding-right: rem($container-gutter);
   margin-left: auto;
   margin-right: auto;
-  max-width: rem($container-width-default);
+  max-width: rem($container-width-default + 2 * $container-gutter);
 }
 
 .o-container--medium {
-  max-width: rem($container-width-medium);
+  max-width: rem($container-width-medium + 2 * $container-gutter);
 }
 
 .o-container--narrow {
-  max-width: rem($container-width-narrow);
+  max-width: rem($container-width-narrow + 2 * $container-gutter);
 }

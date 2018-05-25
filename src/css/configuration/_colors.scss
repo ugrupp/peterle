@@ -11,9 +11,9 @@ $color-gray-6: #6e7074;
 
 // Brand colors
 $color-brown-default: #6e5e50;
-$color-brown-lightest: #f6f4f3;
+$color-brown-lightest: #f6f4f3; // 6% CI color on white background
 $color-brown-lighter: #edeae7;
 
 // Content color mapping
-$color-content: $color-gray-6;
+$color-content: $color-brown-default;
 $color-content-ci: $color-brown-default;

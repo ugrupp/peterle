@@ -1,0 +1,106 @@
+//
+// Topbar
+// --------------------------------------------------
+
+$topbar-alpha-height: 130px;
+$topbar-beta-height: 52px;
+
+.c-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: index($z-index, topbar);
+
+  background-color: $color-white;
+}
+
+// Headroom modifiers
+.c-topbar--headroom-initialized {
+  transition: transform $transition-time-medium;
+}
+
+.c-topbar--unpinned {
+  transform: translateY(-100%);
+}
+
+// Alpha topbar
+.c-topbar__alpha {
+  height: $topbar-alpha-height;
+  padding-top: rem(30px);
+  padding-bottom: rem(30px);
+}
+
+.c-topbar__alpha-container {
+  height: 100%;
+}
+
+.c-topbar__alpha-inner {
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+// Beta topbar
+.c-topbar__beta {
+  height: $topbar-beta-height;
+  background-color: $color-brown-lightest;
+
+  @include mappy-bp(max $bp-menu-collapse) {
+    display: none;
+  }
+}
+
+.c-topbar__beta-container {
+  height: 100%;
+}
+
+.c-topbar__beta-inner {
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+// Logo
+$logo-size: 182px;
+$logo-size-md: 240px;
+
+.c-topbar__logo-inner {
+  position: relative;
+}
+
+.c-topbar__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  transition: transform $transition-time-medium;
+
+  display: block;
+  height: rem($logo-size);
+  width: rem($logo-size);
+
+  @include mappy-bp(md) {
+    height: rem($logo-size-md);
+    width: rem($logo-size-md);
+  }
+
+  // Move logo, so it doesn't overlap content on hidden topbar
+  .c-topbar--unpinned & {
+    transform: translateY(rem($topbar-alpha-height - $logo-size));
+
+    @include mappy-bp(md) {
+      transform: translateY(rem($topbar-alpha-height + $topbar-beta-height - $logo-size-md));
+    }
+  }
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
