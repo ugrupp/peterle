@@ -2,7 +2,7 @@
   {{/* Logo */}}
   <div class="c-topbar__logo-wrapper o-container">
     <div class="c-topbar__logo-inner">
-      <a href="/" class="c-topbar__logo">
+      <a href='{{ "/" | relLangURL }}' class="c-topbar__logo">
         {{ partial "components/svg" (dict "svg" "logo") }}
         <span class="u-invisible">Hotel &amp; Restaurant Peterle</span>
       </a>

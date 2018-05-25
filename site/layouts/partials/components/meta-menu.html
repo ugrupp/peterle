@@ -6,6 +6,10 @@
     <a class="c-meta-menu__link" href="mailto:info@hotel-peterle.de">info@hotel-peterle.de</a>
   </li>
   <li class="c-meta-menu__item">
-    <a class="c-meta-menu__link" href="#">english</a>
+    {{ if eq .context.Site.Language.Lang "de" }}
+      <a class="c-meta-menu__link" href="/en">english</a>
+    {{ else }}
+      <a class="c-meta-menu__link" href="/">deutsch</a>
+    {{ end }}
   </li>
 </ul>

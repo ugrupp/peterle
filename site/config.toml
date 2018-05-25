@@ -1,6 +1,13 @@
 baseurl = "/"
-defaultContentLanguage = "de-DE"
+DefaultContentLanguage = "de"
 title = "Hotel & Restaurant Peterle"
+
+[languages]
+  [languages.de]
+    weight = 1
+
+  [languages.en]
+    weight = 2
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
