@@ -1,12 +1,18 @@
 <div class="c-hero">
+  {{ if .Title }}
+    <div class="c-hero__content">
+      <div class="o-container">
+        <h1 class="c-hero__title c-headline">{{ .Title }}</h1>
+        {{ with .Params.subtitle }}<strong class="c-hero__subtitle c-headline">{{ . | markdownify }}</strong>{{end}}
+      </div>
+    </div>
+  {{end}}
+
   <div class="c-hero__img-wrapper">
     {{ with .Resources.GetMatch "header.jpg" }}
       {{ $imageSmall := .Resize "500x" }}
       {{ $imageMedium := .Resize "1000x" }}
       {{ $imageBig := .Resize "2000x" }}
-
-      {{/* Store the small image for further use within the templates */}}
-      {{ $.Scratch.Set "textureHeaderImage" $imageSmall.RelPermalink }}
 
       {{/* Render the actual hero */}}
       <img

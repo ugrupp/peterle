@@ -24,27 +24,24 @@ $typi: (
     null: (16px, 1.6)
   ),
 
+  richtext: (
+    null: (16px, 1.6),
+    md: (20px)
+  ),
+
   sm: (
-    null: (14px, 1.6)
+    null: (13px, 1.6),
+    md: (16px)
   ),
 
   headline--default: (
-    null: (35px, 1.1),
-    xs: (45px),
-    sm: (65px),
+    null: (29px, 1.2),
+    md: (36px),
   ),
 
   headline--sm: (
-    null: (35px, 1.1),
-    md: (45px),
-  ),
-
-  headline--xs: (
-    null: (22px, 1.1),
-  ),
-
-  headline--xxs: (
-    null: (20px, 1.1),
+    null: (24px, 1.2),
+    md: (30px),
   ),
 );
 /* stylelint-enable */

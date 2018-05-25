@@ -5,6 +5,7 @@
 // Headlines
 .c-headline {
   @include font-ci;
+  font-weight: $font-weight-regular;
   @include typi('headline--default');
   display: block;
 
@@ -21,12 +22,4 @@
 
 .c-headline--sm {
   @include typi('headline--sm');
-}
-
-.c-headline--xs {
-  @include typi('headline--xs');
-}
-
-.c-headline--xxs {
-  @include typi('headline--xxs');
 }
