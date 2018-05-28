@@ -23,3 +23,11 @@
 .c-headline--sm {
   @include typi('headline--sm');
 }
+
+.c-headline--with-spacing {
+  margin-bottom: rem(40px);
+
+  @include mappy-bp(md) {
+    margin-bottom: rem(70px);
+  }
+}

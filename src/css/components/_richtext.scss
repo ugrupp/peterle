@@ -69,3 +69,10 @@
 .c-richtext--sm {
   @include typi(sm);
 }
+
+.c-richtext--multicol {
+  @include mappy-bp(md) {
+    columns: 2;
+    column-gap: $grid-gutter;
+  }
+}
