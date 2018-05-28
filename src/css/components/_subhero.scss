@@ -52,7 +52,6 @@
   padding-bottom: rem(40px);
 
   color: $color-white;
-  @include font-smoothing;
 
   @include mappy-bp(sm) {
     padding-bottom: rem(70px);

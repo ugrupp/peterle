@@ -62,7 +62,6 @@ $bp-linkbox-collapse: md;
 .c-linkbox__headline {
   display: block;
   @include font-ci;
-  @include font-smoothing;
   font-weight: $font-weight-regular;
   @include typi('lg');
   font-style: italic;

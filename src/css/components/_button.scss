@@ -8,7 +8,6 @@
   @include typi('button');
   background-color: $color-content-ci;
   color: $color-white;
-  @include font-smoothing;
   padding: rem(24px);
   transition: background-color $transition-time-default;
 

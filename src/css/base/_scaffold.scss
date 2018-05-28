@@ -18,6 +18,7 @@ html {
 
 body {
   color: $color-content;
+  @include font-smoothing; // applied globally, since even the dark-on-white font looks ugly here.
 
   // fallback font for initial render to avoid FOIT
   font-family: $font-family-base-fallback;

@@ -114,7 +114,6 @@
     display: block;
     @include typi('menu');
     color: $color-gray-6;
-    @include font-smoothing;
 
     &:hover,
     &:focus {

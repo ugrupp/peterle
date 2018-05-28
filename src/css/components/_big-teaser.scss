@@ -6,7 +6,6 @@ $bottom-offset: 42px;
 
 .c-big-teaser {
   position: relative;
-  padding-bottom: rem($bottom-offset);
 }
 
 // Image
@@ -40,11 +39,10 @@ $bottom-offset: 42px;
 .c-big-teaser__content-wrapper {
   position: relative;
   color: $color-white;
-  @include font-smoothing;
 
   @include mappy-bp(sm) {
     position: absolute;
-    bottom: 0;
+    bottom: -$bottom-offset;
     left: 0;
     right: 0;
   }

@@ -1,0 +1,1 @@
+*Wir sind Schwarzwälder…* und Gastgeber. Zwei Eigenschaften, die wir unsere Gäste spüren und erleben lassen wollen. Heimatverbundenheit, unsere Umgebung, die Natur und Ihre Produkte sind für uns wichtig und bestimmen unser Haus und unser Angebot.
