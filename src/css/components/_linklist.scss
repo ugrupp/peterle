@@ -1,0 +1,48 @@
+//
+// Linklist
+// --------------------------------------------------
+
+// Image
+.c-links__img-wrapper {
+  background-color: $color-content-ci;
+}
+
+.c-links__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all $transition-time-long;
+
+  &.lazyload,
+  &.lazyloading {
+    opacity: 0;
+  }
+}
+
+
+// Links
+.c-links__list {
+  @include typi(richtext);
+}
+
+.c-links__listitem {
+  border-bottom: 1px dotted $color-gray-6;
+  padding: 0 rem(20px);
+
+  & + & {
+    margin-top: rem(20px);
+  }
+}
+
+.c-links__link {
+  display: inline-block;
+  color: $color-gray-6;
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
+  transition: color $transition-time-default;
+
+  &:hover,
+  &:focus {
+    color: $color-content-ci;
+  }
+}

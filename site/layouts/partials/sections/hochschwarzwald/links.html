@@ -1,0 +1,69 @@
+{{ with .Resources.GetMatch "links*.md" }}
+  <div class="c-links">
+    <div class="o-container">
+      <div class="o-grid">
+        {{/* Links 1 */}}
+        <div class="o-grid__col" data-reveal>
+          <ul class="c-links__list">
+            {{ range .Params.links1 }}
+              <li class="c-links__listitem">
+                <a href="{{.url}}" class="c-links__link" target="_blank">
+                  {{.title}}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+
+        {{/* Image 1 */}}
+        <div class="o-grid__col" data-reveal>
+          <div class="c-links__img-wrapper">
+            {{ with $.Resources.GetMatch .Params.image1 }}
+              {{ $imageSmall := .Resize "500x" }}
+              {{ $imageMedium := .Resize "800x" }}
+
+              <img
+                alt=""
+                src="{{ $imageSmall.RelPermalink }}"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                data-sizes="auto"
+                class="c-links__img lazyload" />
+            {{ end }}
+          </div>
+        </div>
+
+        {{/* Image 2 */}}
+        <div class="o-grid__col" data-reveal>
+          <div class="c-links__img-wrapper">
+            {{ with $.Resources.GetMatch .Params.image2 }}
+              {{ $imageSmall := .Resize "500x" }}
+              {{ $imageMedium := .Resize "800x" }}
+
+              <img
+                alt=""
+                src="{{ $imageSmall.RelPermalink }}"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                data-sizes="auto"
+                class="c-links__img lazyload" />
+            {{ end }}
+          </div>
+        </div>
+
+        {{/* Links 2 */}}
+        <div class="o-grid__col" data-reveal>
+          <ul class="c-links__list">
+            {{ range .Params.links2 }}
+              <li class="c-links__listitem">
+                <a href="{{.url}}" class="c-links__link" target="_blank">
+                  {{.title}}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
