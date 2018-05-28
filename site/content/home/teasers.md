@@ -12,9 +12,9 @@ teasers:
   url: "#"
 ---
 
-## Lust auf Natur?
+{{< headline level="2" title="Lust auf Natur?" >}}
 
 Dann sind Sie bei uns richtig. Wir sind ein familiär geführtes Landgasthaus, gelegen in der Gemeinde Feldberg im Naturpark Südschwarzwald. Sie finden bei uns gemütliche, individuell eingerichtete Zimmer, eine bodenständige, aber immer abwechslungsreiche Frischeküche und jede Menge Natur — beginnend direkt vor der Tür!
 
-*Wir freuen uns auf Sie*
+*Wir freuen uns auf Sie*  
 *Familie Müller*

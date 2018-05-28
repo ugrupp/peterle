@@ -1,8 +1,8 @@
-<div class="c-teasers" data-reveal>
+<div class="c-teasers">
   {{ with .Resources.GetMatch "teasers*.md" }}
     <div class="c-teasers__grid o-grid">
       {{/* First cell: intro */}}
-      <div class="o-grid__col">
+      <div class="o-grid__col" data-reveal>
         <div class="c-richtext">
           {{ .Content }}
         </div>
@@ -12,7 +12,7 @@
       {{ range .Params.teasers }}
         {{ $title := .title }}
 
-        <div class="o-grid__col">
+        <div class="o-grid__col" data-reveal>
           <a href="{{ .url }}" class="c-teaser">
             {{/* Image */}}
             <div class="c-teaser__img-wrapper">
