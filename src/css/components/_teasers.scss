@@ -10,7 +10,7 @@
 
 // Image
 .c-teaser__img-wrapper {
-  &::after {
+  .c-teaser--hover &::after {
     content: '';
     position: absolute;
     left: 0;

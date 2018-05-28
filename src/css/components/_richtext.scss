@@ -51,8 +51,13 @@
   }
 
   em {
+    @include font-ci;
     color: $color-content-ci;
     font-style: italic;
+  }
+
+  .c-headline {
+    color: $color-content-ci;
   }
 }
 

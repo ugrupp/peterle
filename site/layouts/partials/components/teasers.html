@@ -1,9 +1,9 @@
-<div class="c-teasers">
-  {{ with .Resources.GetMatch "teasers*.md" }}
+{{ with .Resources.GetMatch "teasers*.md" }}
+  <div class="c-teasers">
     <div class="c-teasers__grid o-grid">
       {{/* First cell: intro */}}
       <div class="o-grid__col" data-reveal>
-        <div class="c-richtext">
+        <div class="c-richtext{{ with .Params.richtextSize }} c-richtext--{{.}}{{end}}">
           {{ .Content }}
         </div>
       </div>
@@ -13,7 +13,11 @@
         {{ $title := .title }}
 
         <div class="o-grid__col" data-reveal>
+          {{if .url}}
           <a href="{{ .url }}" class="c-teaser">
+          {{else}}
+          <div class="c-teaser{{if .url}} c-teaser--hover{{end}}">
+          {{end}}
             {{/* Image */}}
             <div class="c-teaser__img-wrapper">
               {{ with $.Resources.GetMatch .image }}
@@ -31,15 +35,21 @@
             </div>
 
             {{/* Button */}}
-            <div class="c-teaser__button">
-              <span class="c-button">
-                {{ $title }}
-                {{ partial "components/svg" (dict "svg" "pfeil") }}
-              </span>
-            </div>
+            {{if .url}}
+              <div class="c-teaser__button">
+                <span class="c-button">
+                  {{ $title }}
+                  {{ partial "components/svg" (dict "svg" "pfeil") }}
+                </span>
+              </div>
+            {{end}}
+          {{if .url}}
           </a>
+          {{else}}
+          </div>
+          {{end}}
         </div>
       {{ end }}
     </div>
-  {{ end }}
-</div>
+  </div>
+{{ end }}
