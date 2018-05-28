@@ -1,0 +1,103 @@
+//
+// Big teaser
+// --------------------------------------------------
+
+$bottom-offset: 42px;
+
+.c-big-teaser {
+  position: relative;
+  padding-bottom: rem($bottom-offset);
+}
+
+// Image
+.c-big-teaser__img-wrapper {
+  height: rem(300px);
+
+  @include mappy-bp(sm) {
+    height: rem(500px);
+  }
+
+  @include mappy-bp(md) {
+    height: rem(800px);
+  }
+  background-color: $color-content-ci;
+}
+
+.c-big-teaser__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all $transition-time-long;
+
+  &.lazyload,
+  &.lazyloading {
+    opacity: 0;
+  }
+}
+
+
+.c-big-teaser__content-wrapper {
+  position: relative;
+  color: $color-white;
+  @include font-smoothing;
+
+  @include mappy-bp(sm) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-content-ci;
+    width: 100%;
+
+    @include mappy-bp($bp-grid-collapse) {
+      width: 50%;
+    }
+  }
+}
+
+.c-big-teaser__container {
+  z-index: 10; // > bg
+  position: relative;
+}
+
+$big-teaser-content-padding: 75px;
+$big-teaser-content-padding-md: 150px;
+
+.c-big-teaser__content {
+  position: relative;
+
+  @include font-ci;
+  font-weight: $font-weight-regular;
+  @include typi('big-teaser');
+
+  padding-bottom: rem($big-teaser-content-padding);
+  padding-top: rem($big-teaser-content-padding);
+
+  @include mappy-bp(md) {
+    padding-bottom: rem($big-teaser-content-padding-md);
+    padding-top: rem($big-teaser-content-padding-md);
+  }
+
+  span {
+    opacity: $hero-opacity;
+  }
+}
+
+.c-big-teaser__separator {
+  position: absolute;
+  left: 0;
+  top: rem($big-teaser-content-padding / 2);
+
+  @include mappy-bp(md) {
+    top: rem($big-teaser-content-padding-md / 2);
+  }
+}
