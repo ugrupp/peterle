@@ -1,0 +1,27 @@
+<a href="{{.url}}" class="c-linkbox">
+  {{$title := .title}}
+
+  {{/* Image */}}
+  <div class="c-linkbox__img-wrapper">
+    {{ with .context.Resources.GetMatch .image }}
+      {{ $imageSmall := .Fill "400x400" }}
+
+      <img
+        alt="{{$title}}"
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="{{ $imageSmall.RelPermalink }}"
+        data-sizes="auto"
+        class="c-linkbox__img lazyload" />
+    {{ end }}
+  </div>
+
+  {{/* Content */}}
+  <div class="c-linkbox__content">
+    <strong class="c-linkbox__headline c-headline c-headline--sm">{{.title}}</strong>
+
+    <span class="c-linkbox__button c-button">
+      {{.buttontext}}
+      {{ partial "components/svg" (dict "svg" "pfeil") }}
+    </span>
+  </div>
+</a>

@@ -1,0 +1,13 @@
+{{ with .Resources.GetMatch "linkboxes*.md" }}
+  <div class="c-linkboxes">
+    <div class="o-container">
+      <div class="o-grid">
+        {{ range .Params.linkboxes }}
+          <div class="o-grid__col" data-reveal>
+            {{ partial "components/linkbox" (dict "context" $ "title" .title "url" .url "image" .image "buttontext" .buttontext) }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}
