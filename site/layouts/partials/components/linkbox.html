@@ -3,16 +3,22 @@
 
   {{/* Image */}}
   <div class="c-linkbox__img-wrapper">
-    {{ with .context.Resources.GetMatch .image }}
-      {{ $imageSmall := .Fill "400x400" }}
+    {{if .image}}
+      {{ with .context.Resources.GetMatch .image }}
+        {{ $imageSmall := .Fill "400x400" }}
 
-      <img
-        alt="{{$title}}"
-        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-        data-src="{{ $imageSmall.RelPermalink }}"
-        data-sizes="auto"
-        class="c-linkbox__img lazyload" />
+        <img
+          alt="{{$title}}"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-src="{{ $imageSmall.RelPermalink }}"
+          data-sizes="auto"
+          class="c-linkbox__img lazyload" />
+      {{ end }}
     {{ end }}
+
+    {{if .icon}}
+      {{ partial "components/svg" (dict "svg" .icon) }}
+    {{end}}
   </div>
 
   {{/* Content */}}

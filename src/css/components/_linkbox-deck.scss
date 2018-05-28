@@ -1,0 +1,27 @@
+//
+// Linkbox-deck (image + linkboxes)
+// --------------------------------------------------
+
+// Image
+.c-linkbox-deck__img-wrapper {
+  background-color: $color-content-ci;
+}
+
+.c-linkbox-deck__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all $transition-time-long;
+
+  &.lazyload,
+  &.lazyloading {
+    opacity: 0;
+  }
+}
+
+// Linkboxes
+.c-linkbox-deck__linkbox {
+  & + & {
+    margin-top: rem(40px);
+  }
+}

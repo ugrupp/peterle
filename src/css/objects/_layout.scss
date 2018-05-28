@@ -54,3 +54,8 @@
     padding-top: rem(240px);
   }
 }
+
+// default section
+.o-main__section--bg-lightest {
+  background-color: $color-brown-lightest;
+}

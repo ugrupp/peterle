@@ -5,5 +5,12 @@
     <section class="o-main__section">
       {{ partial "components/big-teaser.html" . }}
     </section>
+
+    {{/* Linkbox deck */}}
+    <section class="o-main__section o-main__section--bg-lightest">
+      <div class="o-container">
+        {{ partial "components/linkboxes.html" . }}
+      </div>
+    </section>
   </div>
 {{ end }}

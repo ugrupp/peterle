@@ -22,8 +22,15 @@ $bp-linkbox-collapse: md;
   height: rem($linkbox-img-size);
   width: rem($linkbox-img-size);
   background-color: $color-brown-lightest;
+
+  // icon
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
+// actual image
 .c-linkbox__img {
   display: block;
   width: 100%;
