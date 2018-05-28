@@ -11,6 +11,7 @@ $bottom-offset: 42px;
 
 // Image
 .c-big-teaser__img-wrapper {
+  background-color: $color-content-ci;
   height: rem(300px);
 
   @include mappy-bp(sm) {
@@ -20,7 +21,6 @@ $bottom-offset: 42px;
   @include mappy-bp(md) {
     height: rem(800px);
   }
-  background-color: $color-content-ci;
 }
 
 .c-big-teaser__img {

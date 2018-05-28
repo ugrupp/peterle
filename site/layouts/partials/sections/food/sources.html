@@ -1,0 +1,55 @@
+{{ with .Resources.GetMatch "sources*.md" }}
+  {{$title := .Params.title}}
+  <div class="c-sources">
+
+    {{/* Subhero */}}
+    <div class="c-subhero">
+      {{/* Subhero Content */}}
+      {{ if .Params.title }}
+        <div class="c-subhero__content">
+          <div class="c-subhero__container o-container">
+            <div class="c-subhero__separator">
+              {{ partial "components/separator" (dict "inverted" 1) }}
+            </div>
+
+            <h2 class="c-subhero__title c-headline">{{ .Title }}</h2>
+          </div>
+        </div>
+      {{end}}
+
+      {{/* Image */}}
+      <div class="c-subhero__img-wrapper">
+        {{ with $.Resources.GetMatch .Params.image }}
+          {{ $imageSmall := .Resize "500x" }}
+          {{ $imageMedium := .Resize "1000x" }}
+          {{ $imageBig := .Resize "2000x" }}
+
+          {{/* Render the actual hero */}}
+          <img
+            alt="{{$title}}"
+            src="{{ $imageSmall.RelPermalink }}"
+            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+            data-sizes="auto"
+            class="c-subhero__img lazyload" />
+        {{ end }}
+      </div>
+    </div>
+
+    {{/* The sources */}}
+    <div class="o-main__section o-main__section--dark-flowers-left">
+      <div class="o-container">
+        <div class="c-sources__list">
+          {{ range .Params.sources }}
+            <div class="c-sources__source" data-reveal>
+              <div class="c-richtext">
+                <strong class="c-sources__source-title">{{.title}}</strong>
+                <p class="c-sources__source-address">{{.address | markdownify}}</p>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

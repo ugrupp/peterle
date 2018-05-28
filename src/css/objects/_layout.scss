@@ -36,6 +36,7 @@
   background-color: $color-white;
   padding-top: rem(100px);
   padding-bottom: rem(100px);
+  background-repeat: no-repeat;
 
   @include mappy-bp(md) {
     padding-top: rem(160px);
@@ -45,17 +46,38 @@
 
 // default top section
 .o-main__section--top {
-  background-color: $color-brown-lightest;
-  background-image: url('/images/layout/muster-links.png');
-  background-repeat: no-repeat;
-  background-position: left top;
-
   @include mappy-bp(md) {
     padding-top: rem(240px);
   }
 }
 
-// default section
+.o-main__section--white-flowers-left {
+  background-color: $color-brown-lightest;
+  background-image: url('/images/layout/muster-links.png');
+  background-position: left top;
+}
+
+// dark flowers left
+.o-main__section--dark-flowers-left {
+  background-color: $color-white;
+  background-image: url('/images/layout/muster-dunkel-links.png');
+  background-position: left top;
+}
+
+// dark flowers right
+.o-main__section--dark-flowers-right {
+  background-color: $color-white;
+  background-image: url('/images/layout/muster-dunkel-rechts.png');
+  background-position: right top;
+}
+
+// lightest brown background-color
 .o-main__section--bg-lightest {
   background-color: $color-brown-lightest;
+}
+
+// no pad
+.o-main__section--no-pad {
+  padding-top: 0;
+  padding-bottom: 0;
 }
