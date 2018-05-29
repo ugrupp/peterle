@@ -2,8 +2,6 @@
 // Big teaser
 // --------------------------------------------------
 
-$bottom-offset: 42px;
-
 .c-big-teaser {
   position: relative;
 }
@@ -42,7 +40,7 @@ $bottom-offset: 42px;
 
   @include mappy-bp(sm) {
     position: absolute;
-    bottom: -$bottom-offset;
+    bottom: rem(-$bottom-offset-default);
     left: 0;
     right: 0;
   }

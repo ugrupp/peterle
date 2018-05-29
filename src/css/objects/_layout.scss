@@ -24,7 +24,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: rem(16px);
+  top: rem(20px);
 
   @include mappy-bp(md) {
     top: rem(40px);

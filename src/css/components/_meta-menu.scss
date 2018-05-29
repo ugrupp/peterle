@@ -3,20 +3,24 @@
 // --------------------------------------------------
 
 .c-meta-menu--horizontal {
-  display: flex;
+  @include mappy-bp(xs) {
+    display: flex;
+  }
 }
 
 .c-meta-menu__item {
   // Horizontal mode
   .c-meta-menu--horizontal & {
-    display: flex;
-    align-items: baseline;
+    @include mappy-bp(xs) {
+      display: flex;
+      align-items: baseline;
 
-    &:not(:first-of-type)::before {
-      opacity: .5;
-      content: '—';
-      margin-left: 1em;
-      margin-right: 1em;
+      &:not(:first-of-type)::before {
+        opacity: .5;
+        content: '—';
+        margin-left: 1em;
+        margin-right: 1em;
+      }
     }
   }
 

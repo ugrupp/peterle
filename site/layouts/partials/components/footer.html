@@ -1,1 +1,74 @@
-Footer
+{{/* Set headless footer bundle which holds the footer content */}}
+{{ $footer := .Site.GetPage "page" "footer" }}
+
+<footer class="c-footer">
+  {{/* BG Image */}}
+  <div class="c-footer__img-wrapper">
+    {{ with .Resources.GetMatch "footer.jpg" }}
+      {{ $imageSmall := .Resize "500x" }}
+      {{ $imageMedium := .Resize "1000x" }}
+      {{ $imageBig := .Resize "2000x" }}
+
+      <img
+        alt="Footer"
+        src="{{ $imageSmall.RelPermalink }}"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+        data-sizes="auto"
+        class="c-footer__img lazyload" />
+    {{ end }}
+  </div>
+
+  {{/* Content */}}
+  <div class="c-footer__content">
+    <div class="o-container">
+      {{/* Text */}}
+      <div class="c-footer__text">
+        <div class="c-footer__text-cols">
+          {{/* Address */}}
+          <address class="c-footer__text-col c-richtext c-richtext--inverted">
+            {{ with $footer.Resources.GetMatch "col1*.md" }}
+              {{ .Content }}
+            {{end}}
+          </address>
+
+          {{/* Info */}}
+          <div class="c-footer__text-col c-richtext c-richtext--inverted">
+            {{ with $footer.Resources.GetMatch "col2*.md" }}
+              {{ .Content }}
+            {{end}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{/* Map */}}
+    <div class="c-footer__map">
+      Map
+    </div>
+
+    <div class="o-container">
+      {{/* Meta bar */}}
+      <div class="c-footer__meta">
+        {{/* footer meta menu */}}
+        <ul class="c-meta-menu c-meta-menu--horizontal">
+          <li class="c-meta-menu__item">
+            <a class="c-meta-menu__link" href="#">AGB</a>
+          </li>
+          <li class="c-meta-menu__item">
+            <a class="c-meta-menu__link" href="#">Impressum</a>
+          </li>
+          <li class="c-meta-menu__item">
+            <a class="c-meta-menu__link" href="#">Datenschutz</a>
+          </li>
+        </ul>
+
+        {{/* Toplink */}}
+        <a href="#start" class="c-scroll-hint c-scroll-hint--inverted c-scroll-hint--up c-scroll-hint--align-right" data-scroll-top>
+          {{ partial "components/svg" (dict "svg" "pfeil") }}
+          <span class="u-invisible">Nach oben</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

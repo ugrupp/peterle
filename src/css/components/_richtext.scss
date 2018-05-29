@@ -62,6 +62,22 @@
   }
 }
 
+.c-richtext--inverted {
+  &,
+  strong,
+  .c-headline,
+  em,
+  a:hover,
+  a:focus {
+    color: $color-white;
+  }
+
+  a:hover,
+  a:focus {
+    opacity: .5;
+  }
+}
+
 .c-richtext--lg {
   @include typi(lg);
 }

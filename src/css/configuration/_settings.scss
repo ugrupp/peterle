@@ -21,7 +21,7 @@ $transition-time-long: .8s;
 // z-index indexes
 $z-index: hero, content, main, footer, topbar, menu, logo;
 
-// Sizes
+// Sizes & other variables
 $container-gutter: 30px;
 $container-width-default: 1400px;
 $container-width-medium: 1200px;
@@ -36,3 +36,5 @@ $logo-size: 182px;
 $logo-size-md: 240px;
 
 $hero-opacity: .5;
+
+$bottom-offset-default: 42px;
