@@ -2,21 +2,22 @@
 // Layout
 // --------------------------------------------------
 
-.o-main__content {
-  position: relative;
-  z-index: index($z-index, content);
+.o-main {
+  padding-top: 100vh;
+}
 
+.o-main--no-hero {
   // default: top-spacing to match fixed topbar
-  margin-top: $topbar-alpha-height;
+  padding-top: $topbar-alpha-height + $topbar-beta-height;
 
   @include mappy-bp(max $bp-menu-collapse) {
-    margin-top: $topbar-alpha-height + $topbar-beta-height;
+    padding-top: $topbar-alpha-height;
   }
 }
 
-// top-spacing to match fixed hero
-.c-hero + .o-main__content {
-  margin-top: 100vh;
+.o-main__content {
+  position: relative;
+  z-index: index($z-index, content);
 }
 
 // scroll hint
