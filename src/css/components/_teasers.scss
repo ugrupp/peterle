@@ -26,10 +26,10 @@
     background-image: linear-gradient(-45deg, rgba(0, 0, 0, .8) 0%, transparent 80%);
     background-image: radial-gradient(ellipse at right bottom, rgba(0, 0, 0, .8) 0%, transparent 80%);
     background-repeat: no-repeat;
+  }
 
-    .c-teaser:hover & {
-      opacity: 1;
-    }
+  .c-teaser--hover:hover &::after {
+    opacity: 1;
   }
 }
 

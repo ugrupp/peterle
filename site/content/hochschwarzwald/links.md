@@ -24,7 +24,7 @@ image2: links-hochschwarzwald-2.jpg
 links2:
 - title: www.dom-st-blasien.de
   url: https://www.dom-st-blasien.de
-- title: www.kloster-museum.de/
+- title: www.kloster-museum.de
   url: http://www.kloster-museum.de/
 - title: www.st-peter.eu/kloster
   url: http://www.st-peter.eu/kloster
