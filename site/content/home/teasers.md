@@ -2,14 +2,14 @@
 teasers:
 - title: Das Peterle
   image: teaser-peterle.jpg
-  url: "#"
+  url: /das-peterle/
 - title: Schlafen
   image: teaser-food.jpg
-  url: "#"
+  url: /schlafen/
   offset: -170px
 - title: Essen
   image: teaser-sleep.jpg
-  url: "#"
+  url: /essen/
 ---
 
 {{< headline level="2" title="Lust auf Natur?" >}}
