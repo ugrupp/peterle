@@ -5,4 +5,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     speed: 750,
     easing: 'easeOutQuad',
   });
+
+  new SmoothScroll('[data-scroll-content]', {
+    speed: 500,
+    easing: 'easeOutQuad',
+  });
 });

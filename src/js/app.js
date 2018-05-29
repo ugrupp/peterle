@@ -13,8 +13,9 @@ import 'babel-polyfill'; // eslint-disable-line import/no-unresolved
 // module imports
 import './modules/object-fit-images';
 import './modules/topbar';
+import './modules/initial-scroll';
 import './modules/reveal-animations';
-import './modules/top-scroll';
+import './modules/scroll-to';
 import './modules/masonry';
 
 import Menu from './modules/menu';

@@ -1,17 +1,11 @@
 {{ define "main" }}
   {{ partial "components/hero" . }}
 
-  <div class="o-main__content">
+  <div class="o-main__content" id="content">
       {{/* Top & teaser section */}}
     <section class="o-main__section o-main__section--top o-main__section--white-flowers-left">
       {{/* scroll hint */}}
-      <div class="o-main__scroll-hint">
-        <div class="o-container">
-          <div class="c-scroll-hint c-scroll-hint--align-left">
-            {{ partial "components/svg" (dict "svg" "pfeil") }}
-          </div>
-        </div>
-      </div>
+      {{ partial "components/scrollhint.html" . }}
 
       {{/* Content */}}
       <div class="o-container">
