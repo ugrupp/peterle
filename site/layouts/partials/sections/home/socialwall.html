@@ -1,10 +1,9 @@
 <div class="c-socialwall">
   {{ with .Resources.GetMatch "socialwall*.md" }}
-    <h2 class="c-headline">{{ .Params.title }}</h2>
-
+    <h2 class="c-headline c-headline--with-spacing">{{ .Params.title }}</h2>
     <div class="c-socialwall__wall">
       {{/* Feed */}}
-      Socialwall
+      <div id="grashobber-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
     </div>
   {{ end }}
 </div>

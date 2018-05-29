@@ -1,0 +1,26 @@
+//
+// Socialwall
+// --------------------------------------------------
+
+.c-socialwall__wall {
+  margin-left: rem(-12px); // 12px = feed side padding
+  margin-right: rem(-12px);
+}
+
+// widget overrides
+.c-socialwall {
+  .crt-grid-post-v2 .crt-post-fullname,
+  .crt-post-v2 .crt-post-fullname {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .crt-post-v2 .crt-post-content-text {
+    line-height: inherit;
+    text-align: left;
+  }
+}
+
+.crt-popup-wrapper .crt-popup .crt-popup-header .crt-post-name {
+  white-space: normal !important;
+}
