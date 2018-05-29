@@ -1,0 +1,69 @@
+//
+// History
+// --------------------------------------------------
+
+// Image
+.c-history__img-wrapper {
+  background-color: $color-content-ci;
+  margin-top: rem(40px);
+
+  @include mappy-bp(md) {
+    margin-top: rem(80px);
+  }
+}
+
+.c-history__img-wrapper--image-top {
+  order: -10;
+  margin-top: 0;
+  margin-bottom: rem(40px);
+
+  @include mappy-bp(md) {
+    margin-bottom: rem(80px);
+  }
+}
+
+.c-history__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all $transition-time-long;
+
+  &.lazyload,
+  &.lazyloading {
+    opacity: 0;
+  }
+}
+
+// Event
+.c-history__event {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    width: 100%;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: rem(40px);
+
+    @include mappy-bp(md) {
+      margin-bottom: rem(80px);
+    }
+  }
+}
+
+.c-history__date {
+  @include font-ci;
+  @include typi(lg);
+  color: $color-content-ci;
+}
+
+.c-history__separator {
+  margin-top: rem(10px);
+  margin-bottom: rem(10px);
+
+  @include mappy-bp(md) {
+    margin-top: rem(16px);
+    margin-bottom: rem(16px);
+  }
+}

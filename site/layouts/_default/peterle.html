@@ -2,6 +2,24 @@
   {{ partial "components/hero" . }}
 
   <div class="o-main__content">
+      {{/* Top & teaser section */}}
+    <section class="o-main__section o-main__section--top o-main__section--white-flowers-left">
+      {{/* scroll hint */}}
+      <div class="o-main__scroll-hint">
+        <div class="o-container">
+          <div class="c-scroll-hint">
+            {{ partial "components/svg" (dict "svg" "pfeil") }}
+          </div>
+        </div>
+      </div>
+
+      {{/* Content */}}
+      <div class="o-container">
+        <strong class="c-headline c-headline--with-spacing">{{.Params.topSectionTitle}}</strong>
+        {{ partial "sections/peterle/history.html" . }}
+      </div>
+    </section>
+
     <section class="o-main__section o-main__section--no-pad">
       {{ partial "components/big-teaser.html" . }}
     </section>

@@ -41,12 +41,13 @@
   }
 
   a {
-    color: $color-content-ci;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
     transition: all $transition-time-default;
 
     &:hover,
     &:focus {
-      opacity: .8;
+      color: $color-content-ci;
     }
   }
 

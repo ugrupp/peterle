@@ -15,6 +15,7 @@ import './modules/object-fit-images';
 import './modules/topbar';
 import './modules/reveal-animations';
 import './modules/top-scroll';
+import './modules/masonry';
 
 import Menu from './modules/menu';
 
