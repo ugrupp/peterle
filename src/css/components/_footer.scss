@@ -96,12 +96,6 @@ $footer-offset-md: 240px;
   background-color: $color-brown-lightest;
   height: rem(350px);
 
-  // DEMO
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $color-gray-6;
-
   @include mappy-bp($bp-collapse-map) {
     margin-left: 0;
     position: absolute;
@@ -110,6 +104,11 @@ $footer-offset-md: 240px;
     width: 50%;
 
     height: rem(440px);
+  }
+
+  #footer-map {
+    height: 100%;
+    width: 100%;
   }
 }
 

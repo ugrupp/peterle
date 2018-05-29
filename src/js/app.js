@@ -17,6 +17,7 @@ import './modules/initial-scroll';
 import './modules/reveal-animations';
 import './modules/scroll-to';
 import './modules/masonry';
+import './modules/gmap';
 
 import Menu from './modules/menu';
 
