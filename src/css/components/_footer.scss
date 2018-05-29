@@ -3,15 +3,18 @@
 // --------------------------------------------------
 
 $bp-collapse-map: lg;
+$footer-image-height: 70%;
+$footer-offset: 180px;
+$footer-offset-md: 240px;
 
 .c-footer {
   position: relative;
   z-index: index($z-index, footer);
 
-  padding-top: rem(180px);
+  padding-top: rem($footer-offset);
 
   @include mappy-bp(md) {
-    padding-top: rem(240px);
+    padding-top: rem($footer-offset-md);
   }
 }
 
@@ -20,7 +23,7 @@ $bp-collapse-map: lg;
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 0;
+  bottom: 100% - $footer-image-height;
   right: 0;
   overflow: hidden;
   background-color: $color-content-ci;
@@ -43,8 +46,14 @@ $bp-collapse-map: lg;
 .c-footer__content {
   position: relative;
   z-index: 10; // > bg
-  background-color: rgba($color-content-ci, .92);
+  background-image: linear-gradient(180deg, rgba($color-content-ci, .85) 0%, $color-content-ci $footer-image-height);
+  background-size: 100% calc(100% + #{rem($footer-offset)});
+  background-position: left bottom;
   color: $color-white;
+
+  @include mappy-bp(md) {
+    background-size: 100% calc(100% + #{rem($footer-offset-md)});
+  }
 }
 
 .c-footer__text {
