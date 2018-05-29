@@ -19,7 +19,7 @@
     bottom: 0;
     z-index: 10; // > image
 
-    opacity: .6;
+    opacity: .7;
     transition: opacity $transition-time-medium;
 
     // bg gradient
@@ -29,7 +29,7 @@
   }
 
   .c-teaser--hover:hover &::after {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -51,12 +51,4 @@
   bottom: rem(-20px);
   left: 0;
   z-index: 20; // > gradient
-
-  transition: transform $transition-time-medium;
-  transform-origin: left bottom;
-  transform: translate3d(0, 0, 0);
-
-  .c-teaser:hover & {
-    transform: scale(1.05);
-  }
 }
