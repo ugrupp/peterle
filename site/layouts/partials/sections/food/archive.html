@@ -1,0 +1,35 @@
+{{ with .Resources.GetMatch "archive*.md" }}
+  {{$years := (slice "2018" "2017" "2016" "2015" "2014" "2013" "2012" "2011" "2010")}}
+
+  <div class="c-archive" data-archive data-reveal>
+    <h2 class="c-headline c-headline--inverted c-headline--with-spacing">{{.Params.title}}</h2>
+
+    <div class="o-grid">
+      <div class="o-grid__col">
+        <div class="c-archive__year-select">
+          {{range $years}}
+            <a href="#archive-year-{{.}}" class="c-archive__year-opener" data-archive-year-opener>
+              {{ partial "components/svg" (dict "svg" "pfeil") }}
+              <span>{{.}}</span>
+            </a>
+          {{end}}
+        </div>
+      </div>
+
+      <div class="o-grid__col">
+        {{range $years}}
+          <ul class="c-archive__linklist c-linklist c-linklist--lg c-linklist--inverted" id="archive-year-{{.}}" data-archive-year-list>
+            {{ range $.Resources.Match ( printf "archiv/%s/*" . ) }}
+              <li class="c-linklist__item">
+                <a class="c-linklist__link" href="{{ .Permalink }}" target="_blank">
+                  {{ .Title }}
+                  <span class="c-archive__filetype">({{ .Params.filetype }})</span>
+                </a>
+              </li>
+            {{end}}
+          </ul>
+        {{end}}
+      </div>
+    </div>
+  </div>
+{{ end }}

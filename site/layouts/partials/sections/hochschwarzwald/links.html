@@ -4,10 +4,10 @@
       <div class="o-grid">
         {{/* Links 1 */}}
         <div class="o-grid__col" data-reveal>
-          <ul class="c-links__list">
+          <ul class="c-linklist">
             {{ range .Params.links1 }}
-              <li class="c-links__listitem">
-                <a href="{{.url}}" class="c-links__link" target="_blank">
+              <li class="c-linklist__item">
+                <a href="{{.url}}" class="c-linklist__link" target="_blank">
                   {{.title}}
                 </a>
               </li>
@@ -53,10 +53,10 @@
 
         {{/* Links 2 */}}
         <div class="o-grid__col" data-reveal>
-          <ul class="c-links__list">
+          <ul class="c-linklist">
             {{ range .Params.links2 }}
-              <li class="c-links__listitem">
-                <a href="{{.url}}" class="c-links__link" target="_blank">
+              <li class="c-linklist__item">
+                <a href="{{.url}}" class="c-linklist__link" target="_blank">
                   {{.title}}
                 </a>
               </li>

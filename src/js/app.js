@@ -20,6 +20,8 @@ import './modules/masonry';
 import './modules/gmap';
 
 import Menu from './modules/menu';
+import Archive from './modules/archive';
 
 // init modules
 new Menu();
+new Archive();

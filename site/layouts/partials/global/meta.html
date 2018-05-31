@@ -6,7 +6,7 @@
 {{ .Hugo.Generator }}
 
 {{/* Title */}}
-<title>{{- with .Title }}{{ . }} / {{ end }}{{ .Site.Title -}}{{- with .Params.subtitle }} / {{ . }}{{ end }}</title>
+<title>{{- with .Title }}{{ . }} / {{ end }}{{ .Site.Title -}}{{- with .Params.subtitle }} / {{ . | plainify }}{{ end }}</title>
 
 {{/* Favicon */}}
 {{/* TODO */}}

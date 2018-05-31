@@ -20,29 +20,47 @@
 }
 
 
-// Links
-.c-links__list {
+// Linklist component
+.c-linklist {
   @include typi(richtext);
 }
 
-.c-links__listitem {
-  border-bottom: 1px dotted $color-gray-6;
+.c-linklist--lg {
+  @include typi(lg);
+}
+
+.c-linklist__item {
+  border-bottom: 1px dashed rgba($color-gray-6, .5);
   padding: 0 rem(20px);
 
   & + & {
     margin-top: rem(20px);
   }
+
+  .c-linklist--inverted & {
+    border-bottom-color: rgba($color-white, .5);
+  }
 }
 
-.c-links__link {
+.c-linklist__link {
   display: inline-block;
   color: $color-gray-6;
   padding-top: rem(10px);
   padding-bottom: rem(10px);
-  transition: color $transition-time-default;
+  transition: all $transition-time-default;
 
   &:hover,
   &:focus {
     color: $color-content-ci;
+  }
+
+  .c-linklist--inverted & {
+    color: $color-white;
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+      opacity: .5;
+    }
   }
 }
