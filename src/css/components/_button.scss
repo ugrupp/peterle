@@ -15,6 +15,7 @@
   align-items: center;
 
   svg {
+    flex-shrink: 0;
     margin-left: rem(24px);
     width: rem(32px);
     height: rem(8px);

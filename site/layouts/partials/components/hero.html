@@ -1,27 +1,38 @@
-<header class="c-hero">
-  {{ if .Title }}
-    <div class="c-hero__content">
-      <div class="o-container">
-        <h1 class="c-hero__title c-headline">{{ .Title }}</h1>
-        {{ with .Params.subtitle }}<strong class="c-hero__subtitle c-headline">{{ . | markdownify }}</strong>{{end}}
+{{$ := .outer}}
+{{$isSlide := isset . "slide"}}
+
+{{if isset . "image" }}
+  {{ $.Scratch.Set "imageContext" .image }}
+{{else}}
+  {{ $.Scratch.Set "imageContext" ($.Resources.GetMatch "header.jpg") }}
+{{end}}
+
+{{with .context}}
+  <header class='c-hero{{if $isSlide}} c-hero--slide{{end}}'>
+    {{ if .Title }}
+      <div class="c-hero__content">
+        <div class="o-container">
+          <h1 class="c-hero__title c-headline">{{ .Title }}</h1>
+          {{ with .Params.subtitle }}<strong class="c-hero__subtitle c-headline">{{ . | markdownify }}</strong>{{end}}
+        </div>
       </div>
+    {{end}}
+
+    <div class="c-hero__img-wrapper">
+      {{ with ($.Scratch.Get "imageContext") }}
+        {{ $imageSmall := .Resize "500x" }}
+        {{ $imageMedium := .Resize "1000x" }}
+        {{ $imageBig := .Resize "2000x" }}
+
+        {{/* Render the actual hero */}}
+        <img
+          alt="Header"
+          src="{{ $imageSmall.RelPermalink }}"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+          data-sizes="auto"
+          class="c-hero__img lazyload" />
+      {{ end }}
     </div>
-  {{end}}
-
-  <div class="c-hero__img-wrapper">
-    {{ with .Resources.GetMatch "header.jpg" }}
-      {{ $imageSmall := .Resize "500x" }}
-      {{ $imageMedium := .Resize "1000x" }}
-      {{ $imageBig := .Resize "2000x" }}
-
-      {{/* Render the actual hero */}}
-      <img
-        alt="Header"
-        src="{{ $imageSmall.RelPermalink }}"
-        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-        data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
-        data-sizes="auto"
-        class="c-hero__img lazyload" />
-    {{ end }}
-  </div>
-</header>
+  </header>
+{{end}}

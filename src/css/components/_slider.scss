@@ -1,0 +1,26 @@
+//
+// Slider
+// --------------------------------------------------
+
+.c-slider {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: index($z-index, hero);
+  height: 100vh;
+}
+
+// Slidercount component
+.c-slidercount {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 100%;
+}
+
+.c-slidercount__inner {
+  display: flex;
+  justify-content: flex-end;
+}

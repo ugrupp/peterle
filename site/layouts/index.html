@@ -1,11 +1,15 @@
 {{ define "main" }}
   {{/* Get headless home bundle which holds the content */}}
   {{ with .Site.GetPage "page" "home" }}
-    {{ partial "components/hero" . }}
+    {{ partial "components/slider" . }}
 
     <div class="o-main__content" id="content">
+      {{/* slider count */}}
+      {{ partial "sections/home/slidercount.html" . }}
+
       {{/* Top & teaser section */}}
       <section class="o-main__section o-main__section--top o-main__section--white-flowers-left">
+
         {{/* scroll hint */}}
         {{ partial "components/scrollhint.html" . }}
 

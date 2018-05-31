@@ -14,6 +14,7 @@ import 'babel-polyfill'; // eslint-disable-line import/no-unresolved
 import './modules/object-fit-images';
 import './modules/topbar';
 import './modules/initial-scroll';
+import './modules/slider';
 import './modules/reveal-animations';
 import './modules/scroll-to';
 import './modules/masonry';

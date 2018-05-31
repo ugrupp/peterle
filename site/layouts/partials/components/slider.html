@@ -1,0 +1,10 @@
+<div class="c-slider swiper-container" data-slider>
+  <div class="swiper-wrapper">
+    {{$baseContext := .}}
+    {{ range .Resources.Match "slides/slide-*.jpg" }}
+      <div class="swiper-slide">
+        {{ partial "components/hero" (dict "context" $baseContext "outer" $ "image" . "slide" 1) }}
+      </div>
+    {{end}}
+  </div>
+</div>

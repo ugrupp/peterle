@@ -50,6 +50,6 @@ export default class Archive {
   closeAll() {
     [...this.lists, ...this.openers].forEach((item) => {
       item.classList.remove('is-open');
-    })
+    });
   }
 }
