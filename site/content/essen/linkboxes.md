@@ -1,5 +1,5 @@
 ---
-image: linkboxes-teaser.jpg
+image: essen_02.jpg
 alt: Essen im Hotel & Restaurant Peterle
 linkboxes:
 - title: "Unser Leckereien in der Übersicht:"

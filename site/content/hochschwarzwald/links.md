@@ -1,5 +1,5 @@
 ---
-image1: links-hochschwarzwald-1.jpg
+image1: hochschwarzwald_01.jpg
 links1:
 - title: www.schwarzwald-tourismus.info
   url: https://www.schwarzwald-tourismus.info
@@ -20,7 +20,7 @@ links1:
 - title: www.winterhalter-menzenschwand.de
   url: https://www.winterhalter-menzenschwand.de
 
-image2: links-hochschwarzwald-2.jpg
+image2: hochschwarzwald_02.jpg
 links2:
 - title: www.dom-st-blasien.de
   url: https://www.dom-st-blasien.de

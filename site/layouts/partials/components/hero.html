@@ -9,14 +9,14 @@
 
 {{with .context}}
   <header class='c-hero{{if $isSlide}} c-hero--slide{{end}}'>
-    <div class="c-hero__content">
-      {{ if .Title }}
+    {{ if .Title }}
+      <div class="c-hero__content">
         <div class="o-container">
           <h1 class="c-hero__title c-headline">{{ .Title }}</h1>
           {{ with .Params.subtitle }}<strong class="c-hero__subtitle c-headline">{{ . | markdownify }}</strong>{{end}}
         </div>
-      {{end}}
-    </div>
+      </div>
+    {{end}}
 
     <div class="c-hero__img-wrapper">
       {{ with ($.Scratch.Get "imageContext") }}
