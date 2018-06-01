@@ -5,6 +5,8 @@ events:
     1924
   text: "Erbaut von Robert Herrmann, dem Bruder des Hirschenwirts Peter Hermann, als Pension Haus Sonnenschein. Der Richtspruch: ‚Bis Hierher hat mir Gott geholfen, er baute mit an diesem Haus. Er mög mir nun auch weiter helfen, und alle segnen die da gehen ein und aus’"
 
+- image: history-1.jpg
+
 - date: |
     1944  
     1945
@@ -12,12 +14,12 @@ events:
 
 - date: 1946
   text: Die ersten französischen Feriengäste kommen, vermittelt von der Besatzungsmacht & staatlich gefördert aus Paris.
-  image: history-2.jpg
+  
 
 - date: 1950er
   text: Das Haus gehört der Ordensschwester Hugard, die langjährige Oberin auf der Bühlerhöhe war und es als Pension führt. Nach ihrem Tod vermacht sie das Haus der Stadt Staufen, die es an Frau Erika Barquet verpachtet.
-  image: history-1.jpg
-  imagePos: top
+  
+- image: history-2.jpg
 
 - date: 1\. Mai 1961
   text: Karl Peterle, Pächter des Schwarzwaldhauses in Altglashütten, erwirbt das Haus, gibt ihm seinen Namen und eröffnet es als Hotel Restaurant neu. Der Pensionspreis liegt bei ca. 16,-DM, 10 % Bedienung sowie Heizkosten werden extra berechnet.
@@ -29,8 +31,8 @@ events:
 
 - date: 1\. April 1978
   text: Theresia & Franz Müller kaufen das Haus von dem kinderlosen Ehepaar Peterle, nachdem ein Kauf des gepachteten Jostalstüble bei Neustadt nicht zustande kam.
-  image: history-3.jpg
-  imagePos: bottom
+
+- image: history-3.jpg
 
 - date: |
     1979  

@@ -5,21 +5,6 @@
 // Image
 .c-history__img-wrapper {
   background-color: $color-content-ci;
-  margin-top: rem(40px);
-
-  @include mappy-bp(md) {
-    margin-top: rem(80px);
-  }
-}
-
-.c-history__img-wrapper--image-top {
-  order: -10;
-  margin-top: 0;
-  margin-bottom: rem(40px);
-
-  @include mappy-bp(md) {
-    margin-bottom: rem(80px);
-  }
 }
 
 .c-history__img {
