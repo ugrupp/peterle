@@ -17,12 +17,13 @@ import './modules/initial-scroll';
 import './modules/slider';
 import './modules/reveal-animations';
 import './modules/scroll-to';
-import './modules/masonry';
 import './modules/gmap';
 
 import Menu from './modules/menu';
 import Archive from './modules/archive';
+import Masonry from './modules/masonry';
 
 // init modules
 new Menu();
 new Archive();
+new Masonry();

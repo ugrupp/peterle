@@ -34,6 +34,14 @@
   }
 }
 
+// Cols
+.c-history__masonry-col {
+  @include mappy-bp(max $bp-grid-collapse) {
+    margin: 0;
+    padding: 0 !important;
+  }
+}
+
 // Event
 .c-history__event {
   display: flex;
