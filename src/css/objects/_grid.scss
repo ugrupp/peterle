@@ -2,8 +2,6 @@
 // Grid (2-col)
 // --------------------------------------------------
 
-$bp-grid-collapse: sm;
-
 .o-grid {
   @include mappy-bp($bp-grid-collapse) {
     display: flex;

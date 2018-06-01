@@ -78,6 +78,15 @@
   background-position: right top;
 }
 
+// wood background
+.o-main__section--bg-wood {
+  background-image: url('/images/layout/holz.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: $color-content-ci;
+  color: $color-white;
+}
+
 // lightest brown background-color
 .o-main__section--bg-lightest {
   background-color: $color-brown-lightest;
