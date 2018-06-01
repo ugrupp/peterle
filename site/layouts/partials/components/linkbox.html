@@ -1,4 +1,4 @@
-<a href="{{.url}}" class="c-linkbox">
+<a href="{{.url}}"{{if .blank}} target="_blank"{{end}} class="c-linkbox">
   {{$title := .title}}
 
   {{/* Image */}}

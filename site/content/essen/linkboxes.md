@@ -4,10 +4,10 @@ alt: Essen im Hotel & Restaurant Peterle
 linkboxes:
 - title: "Unser Leckereien in der Übersicht:"
   icon: speisekarte
-  url: "#"
+  url: "Speisekarte.pdf"
   buttontext: Speisekarte
 - title: "Eine Auswahl unserer Weine:"
   icon: weinkarte
-  url: "#"
+  url: "Weinkarte.pdf"
   buttontext: Weinkarte
 ---

@@ -8,6 +8,6 @@ resources:
 linkboxes:
 - title: "Unsere Umwelt liegt uns am Herzen:"
   icon: umwelt
-  url: "#"
+  url: "Umwelterklaerung_Hotel_Peterle_2017.pdf"
   buttontext: Umwelterklärung
 ---

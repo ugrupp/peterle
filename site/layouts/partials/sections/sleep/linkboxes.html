@@ -4,7 +4,7 @@
       <div class="o-grid">
         {{ range .Params.linkboxes }}
           <div class="o-grid__col" data-reveal>
-            {{ partial "components/linkbox" (dict "context" $ "title" .title "url" .url "image" .image "buttontext" .buttontext) }}
+            {{ partial "components/linkbox" (dict "context" $ "title" .title "url" .url "blank" true "image" .image "buttontext" .buttontext) }}
           </div>
         {{ end }}
       </div>

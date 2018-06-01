@@ -45,7 +45,7 @@
     {{ with $.Resources.GetMatch "linkboxes*.md" }}
       {{ range .Params.linkboxes }}
         <div class="c-linkbox-deck__linkbox">
-          {{ partial "components/linkbox" (dict "context" $ "title" .title "url" .url "icon" .icon "buttontext" .buttontext) }}
+          {{ partial "components/linkbox" (dict "context" $ "title" .title "url" .url "blank" true "icon" .icon "buttontext" .buttontext) }}
         </div>
       {{ end }}
     {{ end }}
