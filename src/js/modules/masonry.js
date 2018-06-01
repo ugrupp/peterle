@@ -24,7 +24,7 @@ export default class Masonry {
   }
 
   update() {
-    if (window.matchMedia("(min-width: 48em)").matches) {
+    if (window.matchMedia('(min-width: 48em)').matches) {
       this.multicol();
     } else {
       this.onecol();
