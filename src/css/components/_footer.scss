@@ -59,6 +59,12 @@ $footer-offset-md: 240px;
   @include mappy-bp($bp-collapse-map) {
     width: 50%;
   }
+
+  .c-richtext {
+    a {
+      border-bottom: 0 none;
+    }
+  }
 }
 
 .c-footer__text-cols {
