@@ -8,6 +8,9 @@
   width: rem(40px);
   height: rem(40px);
 
+  // align toggler with bottom edge of 'Peterle' logo
+  transform: translateY(rem(16px));
+
   @include mappy-bp($bp-menu-collapse) {
     display: none;
   }
