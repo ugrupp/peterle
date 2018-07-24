@@ -1,10 +1,7 @@
 ---
-image: natur.jpg
+image: false
 alt: Unsere Umwelt liegt uns am Herzen
 inverted: true
-resources:
-- name: linkboxes-teaser
-  src: ./natur.jpg
 linkboxes:
 - title: "Unsere Umwelt liegt uns am Herzen:"
   icon: umwelt
