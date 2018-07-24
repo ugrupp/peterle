@@ -1,11 +1,29 @@
 ---
 teasers:
-- title: Zimmer
-  image: 01_zimmer_01.jpg
-- title: Zimmer
-  image: 01_zimmer_03.jpg
-- title: Zimmer
-  image: 01_zimmer_02.jpg
+- title: Zimmer 1
+  images:
+  - image: 01_zimmer_01.jpg
+    title: Zimmer 1
+  - image: 02_zimmer_01.jpg
+    title: Zimmer 1
+  - image: 03_zimmer_01.jpg
+    title: Zimmer 1
+- title: Zimmer 3
+  images:
+  - image: 01_zimmer_03.jpg
+    title: Zimmer 3
+  - image: 02_zimmer_03.jpg
+    title: Zimmer 3
+  - image: 03_zimmer_03.jpg
+    title: Zimmer 3
+- title: Zimmer 2
+  images:
+  - image: 01_zimmer_02.jpg
+    title: Zimmer 2
+  - image: 02_zimmer_02.jpg
+    title: Zimmer 2
+  - image: 03_zimmer_02.jpg
+    title: Zimmer 2
 ---
 
 {{< headline level="2" title="Unsere Zimmer" >}}

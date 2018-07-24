@@ -18,19 +18,43 @@
           {{else}}
           <div class="c-teaser">
           {{end}}
-            {{/* Image */}}
             <div class="c-teaser__img-wrapper">
-              {{ with $.Resources.GetMatch .image }}
-                {{ $imageSmall := .Resize "500x" }}
-                {{ $imageMedium := .Resize "800x" }}
+              {{/* Single image */}}
+              {{ if index . "image" }}
+                {{ with $.Resources.GetMatch .image }}
+                  {{ $imageSmall := .Resize "500x" }}
+                  {{ $imageMedium := .Resize "800x" }}
 
-                <img
-                  alt="{{ $title }}"
-                  src="{{ $imageSmall.RelPermalink }}"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
-                  data-sizes="auto"
-                  class="c-teaser__img lazyload" />
+                  <img
+                    alt="{{ $title }}"
+                    src="{{ $imageSmall.RelPermalink }}"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                    data-sizes="auto"
+                    class="c-teaser__img lazyload" />
+                {{ end }}
+
+              {{/* Fading images */}}
+              {{ else if index . "images" }}
+                <div class="swiper-container" data-teaser-fader>
+                  <div class="swiper-wrapper">
+                    {{ range .images }}
+                      {{ with $.Resources.GetMatch .image }}
+                        {{ $imageSmall := .Resize "500x" }}
+                        {{ $imageMedium := .Resize "800x" }}
+
+                        <div class="swiper-slide">
+                          <img
+                            alt="{{ $title }}"
+                            src="{{ $imageSmall.RelPermalink }}"
+                            srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                            data-sizes="auto"
+                            class="c-teaser__img" />
+                        </div>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
               {{ end }}
             </div>
 

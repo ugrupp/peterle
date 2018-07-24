@@ -18,6 +18,7 @@ import './modules/slider';
 import './modules/reveal-animations';
 import './modules/scroll-to';
 import './modules/gmap';
+import './modules/teaser-fader';
 
 import Menu from './modules/menu';
 import Archive from './modules/archive';
