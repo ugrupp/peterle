@@ -21,3 +21,15 @@
     height: rem(8px);
   }
 }
+
+.c-button--xs-xs {
+  @include typi('button-xs-xs');
+
+  @include mappy-bp(max sm) {
+    padding: rem(14px);
+
+    svg {
+      margin-left: rem(14px);
+    }
+  }
+}
