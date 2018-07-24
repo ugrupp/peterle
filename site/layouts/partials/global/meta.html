@@ -1,12 +1,36 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
-{{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+<meta name="robots" content="index,follow"/>
 {{ .Hugo.Generator }}
 
 {{/* Title */}}
-<title>{{- with .Title }}{{ . }} / {{ end }}{{ .Site.Title -}}{{- with .Params.subtitle }} / {{ . | plainify }}{{ end }}</title>
+{{ define "site_title" }}{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{- with .Params.subtitle }} | {{ . | plainify }}{{ end }}{{ end }}
+<title>{{ block "site_title" . }}{{ end }}</title>
+<meta itemprop="name" content='{{ block "site_title" . }}{{ end }}' />
+<meta property="og:title" content='{{ block "site_title" . }}{{ end }}' />
+
+{{/* Description */}}
+{{ with .Description }}
+<meta name="description" content="{{ . }}">
+<meta itemprop="description" content="{{ . }}" />
+<meta name="og:description" content="{{ . }}">
+{{ end }}
+
+{{/* Remaining og tags */}}
+<meta property="og:locale" content="{{ $.Site.Params.locale }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.hotel-peterle.de/" />
+<meta property="og:site_name" content="{{ .Site.Title -}}" />
+<meta property="og:latitude" content="47.862744" />
+<meta property="og:longitude" content="8.117352" />
+<meta property="og:street_address" content="Schuppenhörnlestraße 18" />
+<meta property="og:region" content="Baden-W&uuml;rttemberg" />
+<meta property="og:locality" content="Feldberg-Falkau" />
+<meta property="og:postal_code" content="79868" />
+<meta property="og:country_name" content="Deutschland/Germany" />
+<meta property="og:phone_number" content="0049 7655 677" />
+<meta property="article:tag" content="Hotel, Restaurant" />
 
 {{/* Favicon */}}
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=wAOYjrMWXl">

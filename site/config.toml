@@ -7,9 +7,11 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [languages]
   [languages.de]
+    locale = "de_DE"
     weight = 1
 
   [languages.en]
+    locale = "en_GB"
     weight = 2
 
 [params]
