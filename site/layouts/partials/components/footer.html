@@ -1,3 +1,6 @@
+{{/* Store layout */}}
+{{ $layout := .Params.layout }}
+
 {{/* Set headless footer bundle which holds the footer content */}}
 {{ $footer := .Site.GetPage "page" "footer" }}
 
@@ -34,7 +37,14 @@
 
           {{/* Info */}}
           <div class="c-footer__text-col c-richtext c-richtext--inverted">
-            {{ with $footer.Resources.GetMatch "col2*.md" }}
+            {{/* Get correct source file for 2nd column */}}
+            {{if or (eq $layout "peterle") (eq $layout "sleep") (eq $layout "hochschwarzwald") }}
+              {{ $.Scratch.Set "footerCol" "col2-alternative*.md" }}
+            {{else}}
+              {{ $.Scratch.Set "footerCol" "col2-default*.md" }}
+            {{end}}
+
+            {{ with $footer.Resources.GetMatch ($.Scratch.Get "footerCol") }}
               {{ .Content }}
             {{end}}
           </div>
