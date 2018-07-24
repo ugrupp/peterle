@@ -1,0 +1,128 @@
+{{ with .Resources.GetMatch "features*.md" }}
+  {{$title := .Params.title}}
+  <div class="c-features">
+
+    {{/* Subhero */}}
+    <div class="c-subhero">
+      {{/* Subhero Content */}}
+      {{ if .Params.title }}
+        <div class="c-subhero__content">
+          <div class="c-subhero__container o-container">
+            <div class="c-subhero__separator">
+              {{ partial "components/separator" (dict "inverted" 1) }}
+            </div>
+
+            <h2 class="c-subhero__title c-headline">{{ .Title }}</h2>
+          </div>
+        </div>
+      {{end}}
+
+      {{/* Image */}}
+      <div class="c-subhero__img-wrapper">
+        {{ with $.Resources.GetMatch .Params.image }}
+          {{ $imageSmall := .Resize "500x" }}
+          {{ $imageMedium := .Resize "1000x" }}
+          {{ $imageBig := .Resize "2000x" }}
+
+          {{/* Render the actual hero */}}
+          <img
+            alt="{{$title}}"
+            src="{{ $imageSmall.RelPermalink }}"
+            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+            data-sizes="auto"
+            class="c-subhero__img lazyload" />
+        {{ end }}
+      </div>
+    </div>
+
+    {{/* The features */}}
+    <div class="o-main__section o-main__section--white-flowers-right">
+      {{ with .Params.features }}
+        <div class="c-links">
+          <div class="o-container">
+            <div class="o-grid">
+              {{/* Links 1 */}}
+              <div class="o-grid__col" data-reveal>
+                <h3 class="c-links__headline c-headline c-headline--xs c-headline--italic">{{ .hardware.title }}</h3>
+                <ul class="c-linklist">
+                  {{ range .hardware.links1 }}
+                    <li class="c-linklist__item">
+                      <span class="c-linklist__plaintext">
+                        {{.title}}
+                      </span>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+
+              {{/* Image 1 */}}
+              <div class="o-grid__col" data-reveal>
+                <div class="c-links__img-wrapper">
+                  {{ with $.Resources.GetMatch .hardware.image1 }}
+                    {{ $imageSmall := .Resize "500x" }}
+                    {{ $imageMedium := .Resize "800x" }}
+
+                    <img
+                      alt=""
+                      src="{{ $imageSmall.RelPermalink }}"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                      data-sizes="auto"
+                      class="c-links__img lazyload" />
+                  {{ end }}
+                </div>
+              </div>
+
+              {{/* Image 2 */}}
+              <div class="o-grid__col" data-reveal>
+                <div class="c-links__img-wrapper">
+                  {{ with $.Resources.GetMatch .hardware.image2 }}
+                    {{ $imageSmall := .Resize "500x" }}
+                    {{ $imageMedium := .Resize "800x" }}
+
+                    <img
+                      alt=""
+                      src="{{ $imageSmall.RelPermalink }}"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                      data-sizes="auto"
+                      class="c-links__img lazyload" />
+                  {{ end }}
+                </div>
+              </div>
+
+              {{/* Links 2 */}}
+              <div class="o-grid__col" data-reveal>
+                <ul class="c-linklist">
+                  {{ range .hardware.links2 }}
+                    <li class="c-linklist__item">
+                      <span class="c-linklist__plaintext">
+                        {{.title}}
+                      </span>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+
+              {{/* Links 3 */}}
+              <div class="o-grid__col" data-reveal>
+                <h3 class="c-links__headline c-headline c-headline--xs c-headline--italic">{{ .software.title }}</h3>
+                <ul class="c-linklist">
+                  {{ range .software.links1 }}
+                    <li class="c-linklist__item">
+                      <span class="c-linklist__plaintext">
+                        {{.title}}
+                      </span>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+
+    </div>
+  </div>
+{{ end }}

@@ -58,6 +58,12 @@
   background-position: left top;
 }
 
+.o-main__section--white-flowers-right {
+  background-color: $color-brown-lightest;
+  background-image: url('/images/layout/muster-rechts.png');
+  background-position: right top;
+}
+
 .o-main__section--white-opaque-flowers-right {
   background-color: $color-brown-lightest;
   background-image: url('/images/layout/muster-rechts-opaque.png');

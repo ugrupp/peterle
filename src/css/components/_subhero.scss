@@ -10,7 +10,9 @@
   @include mappy-bp(sm) {
     height: rem(500px);
   }
+}
 
+.c-subhero--tall {
   @include mappy-bp(md) {
     height: rem(700px);
   }

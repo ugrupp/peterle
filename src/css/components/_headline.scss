@@ -24,6 +24,14 @@
   @include typi('headline--sm');
 }
 
+.c-headline--xs {
+  @include typi('headline--xs');
+}
+
+.c-headline--italic {
+  font-style: italic;
+}
+
 .c-headline--with-spacing {
   margin-bottom: rem(40px);
 
