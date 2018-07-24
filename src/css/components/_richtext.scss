@@ -30,19 +30,23 @@
   }
 
   p,
-  table {
+  table,
+  .c-headline {
     &:not(:last-child) {
-      margin-bottom: 1em;
+      margin-bottom: rem(30px);
     }
 
     &:not(:first-child) {
-      margin-top: 1em;
+      margin-top: rem(30px);
     }
+  }
+
+  .c-headline--richtext + p {
+    margin-top: rem(-30px);
   }
 
   a {
     color: inherit;
-    border-bottom: 1px solid currentColor;
     transition: all $transition-time-default;
 
     &:hover,
@@ -55,6 +59,17 @@
     @include font-ci;
     color: $color-content-ci;
     font-style: italic;
+  }
+
+  ul {
+    li {
+      display: flex;
+
+      &::before {
+        content: '–';
+        margin-right: .5em;
+      }
+    }
   }
 
   .c-headline {

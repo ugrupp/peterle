@@ -4,7 +4,7 @@
 {{/* Set headless footer bundle which holds the footer content */}}
 {{ $footer := .Site.GetPage "page" "footer" }}
 
-<footer class="c-footer">
+<footer class='c-footer{{if eq $layout "plain" }} c-footer--plain{{end}}'>
   {{/* BG Image */}}
   <div class="c-footer__img-wrapper">
     {{ with .Resources.GetMatch "footer.jpg" }}
@@ -24,38 +24,43 @@
 
   {{/* Content */}}
   <div class="c-footer__content">
-    <div class="o-container">
-      {{/* Text */}}
-      <div class="c-footer__text">
-        <div class="c-footer__text-cols">
-          {{/* Address */}}
-          <address class="c-footer__text-col c-richtext c-richtext--inverted">
-            {{ with $footer.Resources.GetMatch "col1*.md" }}
-              {{ .Content }}
-            {{end}}
-          </address>
+    {{/* Main content */}}
+    {{ if ne $layout "plain" }}
+      <div class="o-container">
+        {{/* Text */}}
+        <div class="c-footer__text">
+          <div class="c-footer__text-cols">
+            {{/* Address */}}
+            <address class="c-footer__text-col c-richtext c-richtext--inverted">
+              {{ with $footer.Resources.GetMatch "col1*.md" }}
+                {{ .Content }}
+              {{end}}
+            </address>
 
-          {{/* Info */}}
-          <div class="c-footer__text-col c-richtext c-richtext--inverted">
-            {{/* Get correct source file for 2nd column */}}
-            {{if or (eq $layout "peterle") (eq $layout "sleep") (eq $layout "hochschwarzwald") }}
-              {{ $.Scratch.Set "footerCol" "col2-alternative*.md" }}
-            {{else}}
-              {{ $.Scratch.Set "footerCol" "col2-default*.md" }}
-            {{end}}
+            {{/* Info */}}
+            <div class="c-footer__text-col c-richtext c-richtext--inverted">
+              {{/* Get correct source file for 2nd column */}}
+              {{if or (eq $layout "peterle") (eq $layout "sleep") (eq $layout "hochschwarzwald") }}
+                {{ $.Scratch.Set "footerCol" "col2-alternative*.md" }}
+              {{else}}
+                {{ $.Scratch.Set "footerCol" "col2-default*.md" }}
+              {{end}}
 
-            {{ with $footer.Resources.GetMatch ($.Scratch.Get "footerCol") }}
-              {{ .Content }}
-            {{end}}
+              {{ with $footer.Resources.GetMatch ($.Scratch.Get "footerCol") }}
+                {{ .Content }}
+              {{end}}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    {{ end }}
 
     {{/* Map */}}
-    <div class="c-footer__map">
-       <div id="footer-map"></div>
-    </div>
+    {{ if ne $layout "plain" }}
+      <div class="c-footer__map">
+        <div id="footer-map"></div>
+      </div>
+    {{ end }}
 
     <div class="o-container">
       {{/* Meta bar */}}
@@ -63,13 +68,13 @@
         {{/* footer meta menu */}}
         <ul class="c-meta-menu c-meta-menu--horizontal">
           <li class="c-meta-menu__item">
-            <a class="c-meta-menu__link" href="#">AGB</a>
+            <a class="c-meta-menu__link" href="{{ ref . "agb/index.md" }}">AGB</a>
           </li>
           <li class="c-meta-menu__item">
-            <a class="c-meta-menu__link" href="#">Impressum</a>
+            <a class="c-meta-menu__link" href="{{ ref . "impressum/index.md" }}">Impressum</a>
           </li>
           <li class="c-meta-menu__item">
-            <a class="c-meta-menu__link" href="#">Datenschutz</a>
+            <a class="c-meta-menu__link" href="{{ ref . "datenschutz/index.md" }}">Datenschutz</a>
           </li>
         </ul>
 

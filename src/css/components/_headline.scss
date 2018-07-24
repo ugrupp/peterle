@@ -4,7 +4,10 @@
 
 // Headlines
 .c-headline {
-  @include font-ci;
+  &:not(.c-headline--richtext) {
+    @include font-ci;
+  }
+
   font-weight: $font-weight-regular;
   @include typi('headline--default');
   display: block;
@@ -26,6 +29,10 @@
 
 .c-headline--xs {
   @include typi('headline--xs');
+}
+
+.c-headline--richtext {
+  @include typi('richtext');
 }
 
 .c-headline--italic {

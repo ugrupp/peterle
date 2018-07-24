@@ -17,7 +17,7 @@
       {{ partial "components/top.html" . }}
 
       {{/* Content */}}
-      <main class="o-main" id="main">
+      <main class='o-main{{if eq .Params.layout "plain"}} o-main--no-hero{{end}}' id="main">
         {{ block "main" . }}{{ end }}
       </main>
 

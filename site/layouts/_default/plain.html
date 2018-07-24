@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <div class="o-main__content" id="content">
+    {{/* Top */}}
+    <section class="o-main__section o-main__section--white-flowers-left">
+      {{/* Content */}}
+      <div class="o-container">
+        <strong class="c-headline c-headline--with-spacing">{{ .Params.topSectionTitle }}</strong>
+        <div class="o-grid">
+          {{ with .Resources.GetMatch "col1*.md" }}
+            <div class="o-grid__col">
+              <div class="c-richtext">
+                {{ .Content }}
+              </div>
+            </div>
+          {{end}}
+
+          {{ with .Resources.GetMatch "col2*.md" }}
+            <div class="o-grid__col">
+              <div class="c-richtext">
+                {{ .Content }}
+              </div>
+            </div>
+          {{end}}
+        </div>
+      </div>
+    </section>
+  </div>
+{{ end }}

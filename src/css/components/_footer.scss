@@ -127,4 +127,12 @@ $footer-offset-md: 240px;
   @include mappy-bp(md) {
     padding-bottom: rem(80px);
   }
+
+  .c-footer--plain & {
+    padding-top: rem(90px);
+
+    @include mappy-bp(md) {
+      padding-top: rem(180px);
+    }
+  }
 }
