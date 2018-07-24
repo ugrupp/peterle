@@ -23,8 +23,10 @@ import './modules/teaser-fader';
 import Menu from './modules/menu';
 import Archive from './modules/archive';
 import Masonry from './modules/masonry';
+import GridSwapped from './modules/grid-swapped';
 
 // init modules
 new Menu();
 new Archive();
 new Masonry();
+new GridSwapped();

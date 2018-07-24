@@ -1,7 +1,7 @@
 {{ with .Resources.GetMatch "links*.md" }}
   <div class="c-links">
     <div class="o-container">
-      <div class="o-grid">
+      <div class="o-grid" data-grid-swapped>
         {{/* Links 1 */}}
         <div class="o-grid__col" data-reveal>
           <ul class="c-linklist">
@@ -33,8 +33,21 @@
           </div>
         </div>
 
+        {{/* Links 2 */}}
+        <div class="o-grid__col" data-reveal data-grid-swapped-item>
+          <ul class="c-linklist">
+            {{ range .Params.links2 }}
+              <li class="c-linklist__item">
+                <a href="{{.url}}" class="c-linklist__link" target="_blank">
+                  {{.title}}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+
         {{/* Image 2 */}}
-        <div class="o-grid__col" data-reveal>
+        <div class="o-grid__col" data-reveal data-grid-swapped-item>
           <div class="c-links__img-wrapper">
             {{ with $.Resources.GetMatch .Params.image2 }}
               {{ $imageSmall := .Resize "500x" }}
@@ -49,19 +62,6 @@
                 class="c-links__img lazyload" />
             {{ end }}
           </div>
-        </div>
-
-        {{/* Links 2 */}}
-        <div class="o-grid__col" data-reveal>
-          <ul class="c-linklist">
-            {{ range .Params.links2 }}
-              <li class="c-linklist__item">
-                <a href="{{.url}}" class="c-linklist__link" target="_blank">
-                  {{.title}}
-                </a>
-              </li>
-            {{ end }}
-          </ul>
         </div>
       </div>
     </div>

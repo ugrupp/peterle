@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           waitForTransition: false,
         },
 
-        simulateTouch : false,
+        simulateTouch: false,
         allowSwipeToNext: false,
         allowSwipeToPrev: false,
         keyboard: false,
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         setTimeout(() => {
           swiper.slideNext();
         }, delay / swipers.length * ++idx);
-      })
+      });
     });
   }
 });
