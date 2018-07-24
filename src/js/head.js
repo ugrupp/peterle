@@ -6,7 +6,7 @@
 import 'lazysizes';
 
 // setTimeout webworker
-import './vendor/HackTimer.silent.min.js';
+//import './vendor/HackTimer.silent.min.js';
 
 // scrollreveal html flag
 import scrollReveal from 'scrollreveal';
