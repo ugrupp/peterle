@@ -22,6 +22,11 @@
   }
 }
 
+.c-button--lg {
+  @include typi('button-lg');
+}
+
+
 .c-button--xs-xs {
   @include typi('button-xs-xs');
 

@@ -3,13 +3,16 @@ teasers:
 - title: Das Peterle
   image: teaser-peterle.jpg
   url: /das-peterle/
+  fixedHeight: true
 - title: Schlafen
   image: teaser-food.jpg
   url: /schlafen/
   offset: -170px
+  fixedHeight: true
 - title: Essen
   image: teaser-sleep.jpg
   url: /essen/
+  fixedHeight: true
 ---
 
 {{< headline level="2" title="Lust auf Natur?" >}}

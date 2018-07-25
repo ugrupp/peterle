@@ -2,6 +2,10 @@
 // Teasers
 // --------------------------------------------------
 
+$teaser-fixed-height: 300px;
+$teaser-fixed-height-md: 400px;
+$teaser-fixed-height-lg: 490px;
+
 .c-teaser {
   display: block;
   position: relative;
@@ -42,6 +46,19 @@
   &.lazyload,
   &.lazyloading {
     opacity: 0;
+  }
+
+  .c-teaser--fixed-height & {
+    object-fit: cover;
+    height: $teaser-fixed-height;
+
+    @include mappy-bp(md) {
+      height: $teaser-fixed-height-md;
+    }
+
+    @include mappy-bp(lg) {
+      height: $teaser-fixed-height-lg;
+    }
   }
 }
 

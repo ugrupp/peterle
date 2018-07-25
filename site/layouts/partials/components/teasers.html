@@ -14,9 +14,9 @@
 
         <div class="o-grid__col" data-reveal>
           {{if .url}}
-          <a href="{{ .url }}" class="c-teaser c-teaser--hover">
+          <a href="{{ .url }}" class="c-teaser c-teaser--hover{{ if .fixedHeight }} c-teaser--fixed-height{{end}}">
           {{else}}
-          <div class="c-teaser">
+          <div class="c-teaser{{ if .fixedHeight }} c-teaser--fixed-height{{end}}">
           {{end}}
             <div class="c-teaser__img-wrapper">
               {{/* Single image */}}
@@ -61,7 +61,7 @@
             {{/* Button */}}
             {{if .url}}
               <div class="c-teaser__button">
-                <span class="c-button">
+                <span class="c-button c-button--lg">
                   {{ $title }}
                   {{ partial "components/svg" (dict "svg" "pfeil") }}
                 </span>
