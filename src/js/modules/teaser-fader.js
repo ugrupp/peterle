@@ -3,7 +3,7 @@ import Swiper from 'swiper';
 document.addEventListener('DOMContentLoaded', (event) => {
   let teaserFaders = [...document.querySelectorAll('[data-teaser-fader]')];
   if (teaserFaders.length) {
-    let delay = 4000;
+    let delay = 6000;
     let swipers = teaserFaders.map((teaserFader, idx) => {
       return new Swiper(teaserFader, {
         loop: true,
