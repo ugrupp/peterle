@@ -5,12 +5,12 @@ teasers:
   url: /das-peterle/
   fixedHeight: true
 - title: Schlafen
-  image: teaser-food.jpg
+  image: teaser-sleep.jpg
   url: /schlafen/
   offset: -170px
   fixedHeight: true
 - title: Essen
-  image: teaser-sleep.jpg
+  image: teaser-food.jpg
   url: /essen/
   fixedHeight: true
 ---
