@@ -21,7 +21,7 @@ Unsere Webseite verwendet teilweise so genannte Cookies. Cookies richten auf Ihr
 
 Der Provider unserer Webseite erhebt und speichert automatisch Informationen in so genannten Server-Log-Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:
 
-- Browsertyp und Browserversion Browsertyp und Browserversion Browsertyp und Browserversion Browsertyp und Browserversion Browsertyp und Browserversion 
+- Browsertyp und Browserversion
 - verwendetes Betriebssystem
 - Referrer URL
 - Hostname des zugreifenden Rechners
