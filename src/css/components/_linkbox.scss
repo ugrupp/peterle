@@ -3,12 +3,15 @@
 // --------------------------------------------------
 
 $linkbox-img-size: 200px;
+$linkbox-content-overlap: 20px;
 $bp-linkbox-collapse: md;
 
 .c-linkbox {
   color: inherit;
   display: flex;
   flex-direction: column;
+
+  position: relative;
 
   @include mappy-bp($bp-linkbox-collapse) {
     flex-direction: row;
@@ -48,14 +51,15 @@ $bp-linkbox-collapse: md;
 
 // Content
 .c-linkbox__content {
-  position: relative;
+  position: absolute;
   z-index: 10; // > image
-  margin-top: rem(-70px);
-  margin-left: rem(30px);
+  bottom: rem(-$linkbox-content-overlap);
+  left: rem(30px);
 
   @include mappy-bp($bp-linkbox-collapse) {
-    margin-top: 0;
-    margin-left: rem(-30px);
+    position: relative;
+    bottom: auto;
+    left: rem(-30px);
   }
 }
 
