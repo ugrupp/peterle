@@ -1,17 +1,17 @@
 ---
 teasers:
-- title: Das Peterle
+- title: The Peterle
   image: teaser-peterle.jpg
-  url: /das-peterle/
+  url: /the-peterle/
   fixedHeight: true
-- title: Schlafen
+- title: Sleep
   image: teaser-food.jpg
-  url: /schlafen/
+  url: /sleep/
   offset: -170px
   fixedHeight: true
-- title: Essen
+- title: Food
   image: teaser-sleep.jpg
-  url: /essen/
+  url: /food/
   fixedHeight: true
 ---
 
