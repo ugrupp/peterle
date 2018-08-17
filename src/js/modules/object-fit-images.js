@@ -2,5 +2,5 @@
 import objectFitImages from 'object-fit-images';
 
 document.addEventListener('DOMContentLoaded', () => {
-  objectFitImages();
+  objectFitImages('img:not(.lazyload):not(.lazyloaded):not(.lazyloading)');
 });
