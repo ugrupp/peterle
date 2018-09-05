@@ -3,6 +3,17 @@
     <h2 class="c-headline c-headline--with-spacing">{{ .Params.title }}</h2>
     <div class="c-socialwall__wall">
       {{/* Feed */}}
+      <div id="das-peterle-feed"></div>
     </div>
+
+      {{/* Button */}}
+      {{if .Params.buttonURL}}
+        <a href="{{ .Params.buttonURL }}" class="c-socialwall__button">
+          <span class="c-button">
+            {{ .Params.buttonText }}
+            {{ partial "components/svg" (dict "svg" "pfeil") }}
+          </span>
+        </a>
+      {{end}}
   {{ end }}
 </div>
