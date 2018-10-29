@@ -1,5 +1,4 @@
 ---
-image: sources.jpg
 title: Our sources
 sources:
 - title: Kronen-Metzgerei

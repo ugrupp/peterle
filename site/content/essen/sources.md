@@ -1,5 +1,4 @@
 ---
-image: sources.jpg
 title: Unsere Bezugsquellen
 sources:
 - title: Kronen-Metzgerei

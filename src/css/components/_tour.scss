@@ -1,0 +1,16 @@
+//
+// Street view tour
+// --------------------------------------------------
+
+.c-tour__iframe {
+  width: 100%;
+  height: rem(300px);
+
+  @include mappy-bp(sm) {
+    height: rem(500px);
+  }
+
+  @include mappy-bp(md) {
+    height: rem(700px);
+  }
+}
