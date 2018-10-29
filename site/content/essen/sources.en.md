@@ -100,11 +100,6 @@ sources:
     Schambachhof  
     79268 Bötzingen  
     [www.weingut-hoefflin.de](http://www.weingut-hoefflin.de)
-- title: Weingut Höfflin
-  address: |
-    Schambachhof  
-    79268 Bötzingen  
-    [www.weingut-hoefflin.de](http://www.weingut-hoefflin.de)
 - title: Weingut Ziereisen
   address: |
     79588 Efringen-Kirchen  

@@ -4,13 +4,13 @@
 
 .c-tour__iframe {
   width: 100%;
-  height: rem(300px);
+  height: rem(400px);
 
   @include mappy-bp(sm) {
-    height: rem(500px);
+    height: rem(600px);
   }
 
   @include mappy-bp(md) {
-    height: rem(700px);
+    height: rem(800px);
   }
 }
