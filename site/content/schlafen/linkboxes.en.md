@@ -2,7 +2,7 @@
 linkboxes:
 - title: "Overview of all room prices:"
   image: linkbox1.jpg
-  url: "Zimmerpreisliste.pdf"
+  url: "Room_prices.pdf"
   buttontext: Room prices
 - title: "Our Arrangements for you:"
   image: linkbox2.jpg
