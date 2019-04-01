@@ -4,10 +4,16 @@ subtitle: Vielfältig, saisonal <span class="br-md"></span>und regional
 layout: food
 
 resources:
+- src: archiv/2019/weinabend_mit_kopp_menukarte.pdf
+  title: Weinabend 2019 mit kopp
 - src: archiv/2018/Aschermittwoch_2018.pdf
   title: Aschermittwoch 2018
 - src: archiv/2018/weinabend_2018_mit_alexander_danner.pdf
   title: Weinabend 2018 mit Alexander Danner
+- src: archiv/2018/Heiligabend_2018.pdf
+  title: Heiligabend 2018
+- src: archiv/2018/Silvester_2018.pdf
+  title: Silvester 2018
 - src: archiv/2017/Aschermittwoch_2017.pdf
   title: Aschermittwoch 2017
 - src: archiv/2017/Heiligabend_2017.pdf
