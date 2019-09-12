@@ -1,4 +1,4 @@
 ---
 title: Startseite
-description: Ihr persönliches, kleines Familienhotel inmitten des Naturparks Südschwarzwald
+description: "Hotel und Restaurant Peterle: familiengeführt, klein, besonders - für eine Auszeit, Wellness, Wandern - mit frischer, regionaler Küche."
 ---

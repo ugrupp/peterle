@@ -4,9 +4,9 @@ teasers:
   image: teaser-peterle.jpg
   url: /das-peterle/
   fixedHeight: true
-- title: Schlafen
+- title: Wohnen
   image: teaser-sleep.jpg
-  url: /schlafen/
+  url: /wohnen/
   offset: -170px
   fixedHeight: true
 - title: Essen
