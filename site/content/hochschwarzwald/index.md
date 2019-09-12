@@ -1,6 +1,6 @@
 ---
 title: Hochschwarzwald
-subtitle: Reine Erholung und Natur pur
+subtitle: Reine Erholung und Natur pur.
 topSectionTitle: 'Geschichte'
 layout: hochschwarzwald
 menu:

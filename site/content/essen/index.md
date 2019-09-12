@@ -1,7 +1,7 @@
 ---
 title: Essen
 description: "Essen im Peterle: reiner Schwarzwälder Geschmack, handgemachte regionale Gerichte, ausgezeichnete Weinkarte. Authentisch, lecker und einmalig."
-subtitle: Vielfältig, saisonal <span class="br-md"></span>und regional
+subtitle: Vielfältig, saisonal <span class="br-md"></span>und regional.
 layout: food
 
 resources:
