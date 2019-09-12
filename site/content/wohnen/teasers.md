@@ -26,6 +26,8 @@ teasers:
     title: Zimmer 2
 ---
 
-{{< headline level="2" title="Unsere Zimmer" >}}
+Unsere Zimmer sind liebevoll und mit dem Blick für das besondere Detail eingerichtet. Keine zwei sind gleich aber alle haben Ausstattungsmerkmale mit Geschichte – wie alte Postkarten, Bilder mit regionalem Bezug oder Werke von jungen Künstlern aus dem Hochschwarzwald.
 
-14 individuell eingerichtete Einzel-, Doppel- und Familienzimmer im separaten Gästehaus, keines wie das andere: vom Bett aus in die Sterne gucken, unterm Paradiesle kuscheln, im ‚Basket‘ versinken, einen Nachmittag auf der Himmelsliege lesen oder beim Duschen auf den Schwarzwald schauen… freuen Sie sich auf ein sehr persönliches Ambiente.
+Und jedes Zimmer hat seine kleinen Besonderheiten, ein markantes Badezimmer, eine besondere Raumfarbe, gemütliche Sessel zum Abtauchen oder Bänke mit weichen Kissen in Dachgauben, von denen sich wunderbar die Natur beobachten lässt – lassen Sie sich überraschen, was in Ihrem Zimmer auf Sie wartet.
+
+Unser kleiner Wellnessbereich mit zwei Saunen und Dampfbad ist frisch renoviert, unsere hausinterne Masseurin steht für Termine bereit und unsere Schwarzwälder Strandkörbe laden Sie zur Entspannung ein.
