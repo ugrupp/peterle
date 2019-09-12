@@ -37,20 +37,46 @@ events:
 - date: |
     1979  
     —  
+    laufend
+  text: Unser Haus erfährt regelmäßig Veränderung und Anpassung. Seit über 40 Jahren wird immer wieder angebaut, umgebaut, modernisiert. Meilensteine finden Sie in dieser Historie, Details erfahren Sie in unserer [Umwelterklärung](Umwelterklaerung_Hotel_Peterle_2017.pdf).
+
+- date: |
+    1979  
+    —  
     1986
-  text: An- und Umbau der Toilettenanlagen und Kühlhäuser. Erweiterung unseres Restaurants durch Überbauung der Terrasse (Frühstücksraum), Küchenumbau, neue Thekenanlage komplette Isolierung und Neuverschindelung des Haupthauses.
+  text: Erweiterung des Restaurants durch Überbauung der Terrasse (Frühstücksraum). Komplette Isolierung und Neuverschindelung des Haupthauses.
 
-- date: 1991
-  text: Es kommen zwei Familienzimmer im Dachgeschoss hinzu, die Küche wird vergrößert sowie die beiden Häuser durch die Hotelhalle verbunden.
+- date: |
+    1988  
+    —  
+    1991
+  text: |
+    Ausbau des Dachgeschosses mit zwei Familienzimmern.  
+    Verbindung der beiden Häuser durch eine Hotelhalle.
 
-- date: 2009
-  text: Die Sauna wird erneuert und vergrößert.
+- date: |
+    2001  
+    —  
+    2011
+  text: Kauf und Umbau des Ferienhauses. Komplettrenovierung von 10 Gästezimmern. Anbau Gästehaus mit neuer Sauna und Dampfbad.
 
 - date: 2012
-  text: Es wird geheiratet.
+  text: Hochzeit von Tobias und Verena Müller
+
+- date: |
+    2013  
+    und  
+    2014
+  text: Neugestaltung der Hotelhalle & Einbau eines Holzofens. Neue Toilettenanlagen im Restaurant
 
 - date: 2014
   text: |
-    Am 1. Januar übernimmt Tobias Müller.  
-    Matthae Müller kommt am 25.11. um 14.04 Uhr zur Welt.
+    Am 01.01. übernimmt Tobias Müller  
+    Am 25.11. um 14.04 Uhr kommt Matthae Müller zur Welt
+
+- date: |
+    2015  
+    —  
+    2017
+  text: Neugestaltung Flur Haupthaus. Einbau LED-Beleuchtung. Renovierung von 2 Zimmern und Bäder. Komplettrenovierung der Familienzimmer. Verkabelung des Gästehauses, W-LAN in allen Gästezimmern.
 ---

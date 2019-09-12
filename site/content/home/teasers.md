@@ -15,9 +15,10 @@ teasers:
   fixedHeight: true
 ---
 
-{{< headline level="2" title="Lust auf Natur?" >}}
+Bei uns finden Sie Ruhe. Bei uns können Sie abschalten. In uns haben Sie ein zweites Zuhause – inmitten der schönen Natur des Hochschwarzwaldes.
 
-Dann sind Sie bei uns richtig. Wir sind ein familiär geführtes Landgasthaus, gelegen in der Gemeinde Feldberg im Naturpark Südschwarzwald. Sie finden bei uns gemütliche, individuell eingerichtete Zimmer, eine bodenständige, aber immer abwechslungsreiche Frischeküche und jede Menge Natur — beginnend direkt vor der Tür!
+In unserem kleinen, familiengeführten Hotel bekommt jeder Gast die Aufmerksamkeit, die er sich wünscht. Sie können während Ihres Aufenthaltes Teil unserer Familie werden – oder sich der Ruhe und Abgeschiedenheit hingeben. Sie bestimmen was Ihnen gut tut.
 
-*Wir freuen uns auf Sie*  
-*Familie Müller*
+Unser Haus ist mit 25 Betten bewusst klein, fein, besonders und liebevoll eingerichtet. Wir schätzen den persönlichen Kontakt zu jedem Gast und freuen uns über die zahlreichen Stammgäste, die regelmäßig wiederkommen. Die meisten die uns besuchen, kommen auf Empfehlung und werden in vielen Fällen selbst zum „Wiederholungstäter“. Vielleicht auch Sie? Wir würden uns freuen.
+
+*Ihre Familie Müller*
