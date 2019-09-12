@@ -5,7 +5,7 @@
 {{ .Hugo.Generator }}
 
 {{/* Title */}}
-{{ define "site_title" }}{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{- with .Params.subtitle }} | {{ . | plainify }}{{ end }}{{ end }}
+{{ define "site_title" }}{{ if .Params.metatitle }}{{ .Params.metatitle }}{{ else }}{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{- with .Params.subtitle }} | {{ . | plainify }}{{ end }}{{ end }}{{ end }}
 <title>{{ block "site_title" . }}{{ end }}</title>
 <meta itemprop="name" content='{{ block "site_title" . }}{{ end }}' />
 <meta property="og:title" content='{{ block "site_title" . }}{{ end }}' />
