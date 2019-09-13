@@ -1,5 +1,4 @@
 ---
-richtextSize: 'lg'
 teasers:
 - title: Vielfältig, saisonal und regional
   image: essen_01.jpg

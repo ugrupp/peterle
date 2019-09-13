@@ -15,6 +15,8 @@ teasers:
   fixedHeight: true
 ---
 
+{{< headline level="2" title="Ankommen. Runterkommen. Wiederkommen. <span class=\"br-md\"></span>Herzlich Willkommen im Hotel & Restaurant Peterle." >}}
+
 Bei uns finden Sie Ruhe. Bei uns können Sie abschalten. In uns haben Sie ein zweites Zuhause – inmitten der schönen Natur des Hochschwarzwaldes.
 
 In unserem kleinen, familiengeführten Hotel bekommt jeder Gast die Aufmerksamkeit, die er sich wünscht. Sie können während Ihres Aufenthaltes Teil unserer Familie werden – oder sich der Ruhe und Abgeschiedenheit hingeben. Sie bestimmen was Ihnen gut tut.

@@ -1,6 +1,8 @@
 ---
 title: Hochschwarzwald
 subtitle: Reine Erholung und Natur pur.
+metatitle: Das Peterle mitten im Hochschwarzwald. Reine Erholung und Natur pur.
+description: "Unsere Lage: Wald, Berge und Seen in Fußweite und dennoch innerhalb einer Stunde im Elsaß, am Rhein oder in der Schweiz."
 topSectionTitle: 'Geschichte'
 layout: hochschwarzwald
 menu:

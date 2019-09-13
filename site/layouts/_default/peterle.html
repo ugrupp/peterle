@@ -2,25 +2,23 @@
   {{ partial "components/hero" (dict "context" . "outer" $) }}
 
   <div class="o-main__content" id="content">
-      {{/* Top & teaser section */}}
+    {{/* Claim section */}}
     <section class="o-main__section o-main__section--top o-main__section--white-flowers-left">
       {{/* scroll hint */}}
       {{ partial "components/scrollhint.html" . }}
 
-      {{/* Content */}}
-      <div class="o-container">
-        <strong class="c-headline c-headline--with-spacing">{{.Params.topSectionTitle}}</strong>
-        {{ partial "sections/peterle/history.html" . }}
-      </div>
+      {{ partial "sections/peterle/claim.html" . }}
     </section>
 
     <section class="o-main__section o-main__section--no-pad">
       {{ partial "components/big-teaser.html" . }}
     </section>
 
-    {{/* Claim section */}}
     <section class="o-main__section o-main__section--dark-flowers-right">
-      {{ partial "sections/peterle/claim.html" . }}
+      {{/* Content */}}
+      <div class="o-container">
+        {{ partial "sections/peterle/history.html" . }}
+      </div>
     </section>
 
     {{/* Linkbox deck */}}
