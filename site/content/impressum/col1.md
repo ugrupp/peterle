@@ -16,6 +16,6 @@ Inhaltlich Verantwortlich gemäß § 6 MDStV:
 Tobias Müller
 <br><br>
 **Gestaltung, Programmierung:**  
-creative linx, büro für gestaltung  
-[www.creativelinx.de](https://www.creativelinx.de)
+Format, Büro für Gestaltung  
+[www.formatformat.de](https://formatformat.de)
 <br><br>
