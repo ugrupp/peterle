@@ -38,13 +38,13 @@ events:
     1979  
     —  
     laufend
-  text: Unser Haus erfährt regelmäßig Veränderung und Anpassung. Seit über 40 Jahren wird immer wieder angebaut, umgebaut, modernisiert. Meilensteine finden Sie in dieser Historie, Details erfahren Sie in unserer [Umwelterklärung](Umwelterklaerung_Hotel_Peterle_2017.pdf).
+  text: Unser Haus erfährt regelmäßig Veränderung und Anpassung. Seit über 40 Jahren wird immer wieder angebaut, umgebaut, modernisiert. Meilensteine finden Sie in dieser Historie, Details erfahren Sie in unserer [Umwelterklärung](Umwelterklaerung_Hotel_Peterle_2017.pdf).
 
 - date: |
     1979  
     —  
     1986
-  text: Erweiterung des Restaurants durch Überbauung der Terrasse (Frühstücksraum). Komplette Isolierung und Neuverschindelung des Haupthauses.
+  text: Erweiterung des Restaurants durch Überbauung der Terrasse (Frühstücksraum). Komplette Isolierung und Neuverschindelung des Haupthauses.
 
 - date: |
     1988  
@@ -61,7 +61,7 @@ events:
   text: Kauf und Umbau des Ferienhauses. Komplettrenovierung von 10 Gästezimmern. Anbau Gästehaus mit neuer Sauna und Dampfbad.
 
 - date: 2012
-  text: Hochzeit von Tobias und Verena Müller
+  text: Hochzeit von Tobias und Verena Müller
 
 - date: |
     2013  
@@ -71,8 +71,8 @@ events:
 
 - date: 2014
   text: |
-    Am 01.01. übernimmt Tobias Müller  
-    Am 25.11. um 14.04 Uhr kommt Matthae Müller zur Welt
+    Am 01.01. übernimmt Tobias Müller  
+    Am 25.11. um 14.04 Uhr kommt Matthae Müller zur Welt
 
 - date: |
     2015  

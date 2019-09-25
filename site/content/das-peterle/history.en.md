@@ -17,12 +17,12 @@ events:
   
 
 - date: 1950er
-  text: The house belongs to the order sister Hugard, who was a long-time superior on the ‘Bühlerhöhe and leads it as a pension. After her death she left the house of the city of Staufen, which leased it to Mrs. Erika Barquet.
+  text: The house belongs to the order sister Hugard, who was a long-time superior on the ‘Bühlerhöhe and leads it as a pension. After her death she left the house of the city of Staufen, which leased it to Mrs. Erika Barquet.
   
 - image: history-2.jpg
 
 - date: 1\. Mai 1961
-  text: Karl Peterle, tenant of the restaurant 'Schwarzwaldhaus' in Altglashütten, buys the house, gives him his name and reopens it as a hotel restaurant. The pension price is approx. 16.0-DM, 10% service as well as heating costs are charged extra.
+  text: Karl Peterle, tenant of the restaurant 'Schwarzwaldhaus' in Altglashütten, buys the house, gives him his name and reopens it as a hotel restaurant. The pension price is approx. 16.0-DM, 10% service as well as heating costs are charged extra.
 
 - date: |
     1972   
@@ -30,7 +30,7 @@ events:
   text: Fam. Peterle builds the guesthouse with 12 rooms, bath/shower & WC on most rooms, house intercom and a TV room. Television in the guest rooms is available on request.
 
 - date: 1\. April 1978
-  text: Theresia & Franz Müller buy the house from the childless couple Peterle, after a buy of the rented restaurant 'Jostalstüble' at Neustadt did not come about.
+  text: Theresia & Franz Müller buy the house from the childless couple Peterle, after a buy of the rented restaurant 'Jostalstüble' at Neustadt did not come about.
 
 - image: history-3.jpg
 
@@ -51,6 +51,6 @@ events:
 
 - date: 2014
   text: |
-    Tobias Müller will take over on 1 January.  
-    Matthae Müller is born on 25.11. at 14.04h
+    Tobias Müller will take over on 1 January.  
+    Matthae Müller is born on 25.11. at 14.04h
 ---
