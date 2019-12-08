@@ -26,6 +26,8 @@ teasers:
     title: Zimmer 2
 ---
 
-{{< headline level="2" title="Our rooms" >}}
+Our rooms are furnished with loving attention to detail. No two are the same, but they all have decorative touches with a history, such as old postcards, pictures of the region or pieces by young artists from the Black Forest.
 
-14 individually furnished single double and family rooms in a separate guesthouse, none like the other: Look into the stars from the bed, cuddle under the paradise, sink into the 'basket', read an afternoon on the sky bed or shower on the Black Forest Look... look forward to a very personal ambience.
+And each room has its own unique features — a striking bathroom design, a particular wall colour, comfortable armchairs to sink into or benches with soft cushions in the dormers, offering a wonderful view of the surrounding natural beauty. Discover the surprises waiting for you behind your door!
+
+Our small spa area is freshly renovated with two saunas and a steam bath, our in-house massage therapist is ready to take your appointment and our traditional Black Forest outdoor furniture is set up for the ultimate relaxing afternoon.

@@ -37,20 +37,46 @@ events:
 - date: |
     1979  
     —  
+    laufend
+  text: We may cherish our traditions, but we’re no strangers to change. For over 40 years now, we have been continually expanding, renovating and modernising our hotel. This history outlines the important milestones; more details can be found in our [environmental statement](Umwelterklaerung_Hotel_Peterle_2017.pdf).
+
+- date: |
+    1979  
+    —  
     1986
-  text: Extension and renovation of VonToiletten & Cold stores. Extension of the restaurant by roofing of the Terrace (breakfast room), kitchen remodeling, new counter system complete insulation and new wood cladding of the main house
+  text: The restaurant is extended by building over the terrace (breakfast room). The main building is completely insulated and re-shingled.
 
-- date: 1991
-  text: 2 family rooms are added in the attic, the kitchen is enlarged and the two houses are connected by the Hotel hall.
+- date: |
+    1988  
+    —  
+    1991
+  text: |
+    Two family suites are added to the top floor.  
+    The two buildings are connected by a lobby.
 
-- date: 2009
-  text: The sauna is renewed and enlarged.
+- date: |
+    2001  
+    —  
+    2011
+  text: The holiday home is purchased and renovated. Ten guest rooms are fully renovated. The guesthouse is added with a new sauna and steam bath.
 
 - date: 2012
-  text: is getting married
+  text: Tobias and Verena Müller get married.
+
+- date: |
+    2013  
+    und  
+    2014
+  text: The lobby is redesigned and a new wood-burning oven is added. New toilet facilities are installed in the restaurant.
 
 - date: 2014
   text: |
-    Tobias Müller will take over on 1 January.  
-    Matthae Müller is born on 25.11. at 14.04h
+    Tobias Müller takes over the business on 1 January.  
+    Matthae Müller is born on 25 November at 2.04 pm.
+
+- date: |
+    2015  
+    —  
+    2017
+  text: The main building’s hallway is redesigned. LED lighting is installed. Two bedrooms and bathrooms are renovated. The family suites are completely renovated. The guesthouse is rewired and WiFi access is provided in all bedrooms.
 ---

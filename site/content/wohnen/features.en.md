@@ -1,33 +1,34 @@
 ---
 image: holz2.jpg
-title: Inclusive
+title: Included Services
 features:
   hardware:
-    title: Hardware
-    image1: schlafen_01.jpg
+    title1: What we do for you
+    image1: schlafen_02.jpg
     links1:
-    - title: Our Black Forest breakfast buffet with products from our region
-    - title: 2 saunas and steam bath, exclusively for our hotel guests
-    - title: shower, toilet, bathrobes & hair dryer in each room
-    - title: The sauna bag for your stay with sauna towel and slippers
-    - title: Black Forest mineral water on arrival
+    - title: Pick you up from the train station
+    - title: Provide you with mineral water from the Black Forest upon your arrival
+    - title: Provide rooms with a shower, private bathroom, bathrobes, hairdryer, LCD TV & WiFi as standard
+    - title: Prepare a Black Forest breakfast buffet with regional products every day
+    - title: Provide a sauna bag with a sauna towel and slippers for you to use during your stay
+    - title: Offer you a selection of pillows for a restful night’s sleep
+    - title: Offer tips and recommendations for your holiday
 
-    image2: schlafen_02.jpg
+    title2: What you can do here
+    image2: schlafen_01.jpg
     links2:
-    - title: Selection of pillows for a restful sleep
-    - title: Backpack, hiking maps and walking sticks for rent
-    - title: Our fireplace room as meeting point, play corner and library
-    - title: Mountain bikes for expanding your radius
-    - title: The Konus-guest card as a free bus and train ticket in the entire Black Forest
-    - title: several hundred kilometres of hiking trails, directly from the house
-    - title: The landscape around us with high mountains and wide valleys, deep gorges, colourful meadows, clear lakes and bubbling creeks
+    - title: Enjoy exclusive access to our saunas and steam bath
+    - title: Borrow backpacks, hiking maps and hiking poles
+    - title: Cover plenty of ground by mountain bike
+    - title: Spend some quiet time by the fire in our lounge, complete with a games corner and library
+    - title: Use the KONUS Guest Card to ride buses, trams and trains for free throughout the Black Forest region
+    - title: Hike hundreds of kilometres starting right from our front door
 
   software:
-    title: Software
+    title: How you can nourish your soul
     links1:
-    - title: Family atmosphere with cordiality and passion
-    - title: Many tips and personal recommendations for your holiday
-    - title: Clear air to breathe and for a relaxing night
-    - title: Shuttleservice from the station
-    - title: Lots of nature and quiet places to come down and relax
+    - title: Breathe in the fresh mountain air for restful days and nights
+    - title: Sit back and unwind in natural surroundings
+    - title: Admire the breath-taking scenery with its tall mountains, wide valleys, deep ravines, rolling pastures, green meadows, crystalline lakes and babbling brooks
+    - title: Soak in the friendly atmosphere of our hotel and get to know our warm and dedicated staff
 ---

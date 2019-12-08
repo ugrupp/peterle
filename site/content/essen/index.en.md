@@ -1,8 +1,10 @@
 ---
-title: Food
-subtitle: Varied, seasonal <span class="br-md"></span>and regional
+title: Cuisine
+description: "Cuisine at Peterle: real Black Forest flavour, homemade regional delicacies, award-winning wine list. Authentic, delicious and unique."
+subtitle: Varied, seasonal <span class="br-md"></span>and local.
+metatitle: "Cuisine at Peterle: local, sustainable, high-quality and full of inspiration."
 layout: food
-url: /en/food
+url: /en/cuisine
 
 resources:
 - src: archiv/2019/weinabend_mit_kopp_menukarte.pdf
