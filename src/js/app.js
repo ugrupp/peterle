@@ -19,6 +19,7 @@ import './modules/reveal-animations';
 import './modules/scroll-to';
 import './modules/gmap';
 import './modules/teaser-fader';
+import './modules/cookieconsent';
 
 import Menu from './modules/menu';
 import Archive from './modules/archive';

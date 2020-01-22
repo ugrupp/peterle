@@ -20,6 +20,7 @@
     "babel-register": "^6.11.6",
     "browser-sync": "^2.23.6",
     "colcade": "^0.2.0",
+    "cookieconsent": "^3.1.1",
     "css-loader": "^0.28.9",
     "cssnano": "^3.10.0",
     "dotenv": "^5.0.1",
