@@ -1,3 +1,10 @@
+---
+teasers:
+- title: The family
+  image: team.jpg
+  fixedHeight: true
+---
+
 Our little oasis of calm is the ideal destination for nature lovers, hiking enthusiasts, relaxation and pleasure seekers, fitness fans, spa worshippers and open-water swimmers. As a small, one-of-a-kind hotel, we are intent on setting ourselves apart from impersonal mass tourism.
 
 For us, the perfect holiday includes nature, fine dining, comfortable spaces and an environment where you feel at home. And we work passionately to provide this for our guests every single day.

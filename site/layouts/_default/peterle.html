@@ -2,12 +2,14 @@
   {{ partial "components/hero" (dict "context" . "outer" $) }}
 
   <div class="o-main__content" id="content">
-    {{/* Claim section */}}
+    {{/* Top & teaser section */}}
     <section class="o-main__section o-main__section--top o-main__section--white-flowers-left">
       {{/* scroll hint */}}
       {{ partial "components/scrollhint.html" . }}
 
-      {{ partial "sections/peterle/claim.html" . }}
+      <div class="o-container">
+        {{ partial "components/teasers.html" . }}
+      </div>
     </section>
 
     <section class="o-main__section o-main__section--no-pad">
