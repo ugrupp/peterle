@@ -9,6 +9,10 @@ Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihr
 
 Diese Webseite verwendet das Produkt Google Maps von Google Inc. Durch Nutzung dieser Webseite erklären Sie sich mit der Erfassung, Bearbeitung sowie Nutzung der automatisiert erhobenen Daten durch Google Inc, deren Vertreter sowie Dritter einverstanden. Die Nutzungsbedingungen von Google Maps finden sie unter http://google.com/intl/de_de/help/terms_maps.html.
 
+{{< headline level="3" class="c-headline--richtext" title="Verwendung des Onlinebuchungstools" >}}
+
+Unsere Webseite verwendet zur Ermöglichung der Onlinebuchungen von Unterkunftsleistungen und sonstigen Reiseleistungen, sowie zur Abwicklungen von Anfragen das Onlinebuchungstool DIRS21 (nachfolgend „OBT“) der Firma TourOnline AG, Borsigstraße 26, 73249 Wernau, Deutschland (nachfolgend „TOAG“). Im Rahmen des OBT verarbeitet die TOAG die Daten als Verantwortlicher. Die Hinweise und Bestimmungen zum Datenschutz finden Sie in der Datenschutzerklärung der TOAG zum OBT, welche Sie jederzeit aus dem OBT heraus aufrufen können oder unter http://www.dirs21.de/datenschutz einsehen können.
+
 {{< headline level="3" class="c-headline--richtext" title="Facebook-Plugins" >}}
 
 Auf unseren Seiten sind Plugins des sozialen Netzwerks Facebook, Anbieter Facebook Inc., 1 Hacker Way, Menlo Park, California 94025, USA, integriert. Die Facebook-Plugins erkennen Sie an dem Facebook-Logo oder dem "Like-Button" ("Gefällt mir") auf unserer Seite. Eine Übersicht über die Facebook-Plugins finden Sie hier: http://developers.facebook.com/docs/plugins/.
