@@ -15,7 +15,12 @@ features:
     - title: Wir geben Ihnen Tipps und Empfehlungen für Ihren Urlaubstag
 
     title2: Was Sie bei uns tun können
-    image2: schlafen_01.jpg
+    images2:
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-01.jpg
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-02.jpg
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-03.jpg
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-04.jpg
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-05.jpg
     links2:
     - title: Sie können als Hausgäste exclusiv unsere Sauna und das Dampfbad nutzen
     - title: Sie können bei uns Rucksäcke, Wanderkarten und -stöcke ausleihen
