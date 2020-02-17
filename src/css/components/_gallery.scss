@@ -47,3 +47,7 @@ $gallery-fixed-height-lg: 490px;
   bottom: 0;
   z-index: 10;
 }
+
+.c-gallery--on-gray .c-button {
+  background-color: $color-brown-lightest;
+}

@@ -90,20 +90,7 @@
 
               {{/* Image 2 */}}
               <div class="o-grid__col" data-reveal data-grid-swapped-item>
-                <div class="c-links__img-wrapper">
-                  {{ with $.Resources.GetMatch .hardware.image2 }}
-                    {{ $imageSmall := .Resize "500x" }}
-                    {{ $imageMedium := .Resize "800x" }}
-
-                    <img
-                      alt=""
-                      src="{{ $imageSmall.RelPermalink }}"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                      data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
-                      data-sizes="auto"
-                      class="c-links__img lazyload" />
-                  {{ end }}
-                </div>
+                {{ partial "components/gallery" (dict "context" $ "title" $title "images" .hardware.images2 "onGray" true) }}
               </div>
 
               {{/* Links 3 */}}

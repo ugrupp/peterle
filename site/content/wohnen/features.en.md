@@ -4,7 +4,7 @@ title: Included Services
 features:
   hardware:
     title1: What we do for you
-    image1: schlafen_02.jpg
+    image1: section-inklusivleistungen.jpg
     links1:
     - title: Pick you up from the train station
     - title: Provide you with mineral water from the Black Forest upon your arrival
@@ -15,7 +15,12 @@ features:
     - title: Offer tips and recommendations for your holiday
 
     title2: What you can do here
-    image2: schlafen_01.jpg
+    images2:
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-01.jpg
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-02.jpg
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-03.jpg
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-04.jpg
+      - image: inklusivleistungen/section-inklusivleistungen-galerie-05.jpg
     links2:
     - title: Enjoy exclusive access to our saunas and steam bath
     - title: Borrow backpacks, hiking maps and hiking poles

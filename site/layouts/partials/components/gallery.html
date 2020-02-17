@@ -1,7 +1,7 @@
 {{$context := .context}}
 {{$title := .title}}
 
-<div class="c-gallery c-gallery--fixed-height" data-gallery>
+<div class="c-gallery c-gallery--fixed-height{{ with .onGray }} c-gallery--on-gray{{end}}" data-gallery>
   <div class="c-gallery__img-wrapper">
     {{ if index . "images" }}
       <div class="swiper-container" data-gallery-swiper>
