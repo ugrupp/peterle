@@ -2,7 +2,11 @@
 richtextSize: 'lg'
 teasers:
 - title: Varied, seasonal and regional
-  image: essen_01.jpg
+  gallery: true
+  images:
+    - image: galerie-1.jpg
+    - image: galerie-2.jpg
+    - image: galerie-3.jpg
   fixedHeight: true
 ---
 

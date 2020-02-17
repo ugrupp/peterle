@@ -34,27 +34,35 @@
                     class="c-teaser__img lazyload" />
                 {{ end }}
 
-              {{/* Fading images */}}
+              {{/* Gallery / Fading images */}}
               {{ else if index . "images" }}
-                <div class="swiper-container" data-teaser-fader>
-                  <div class="swiper-wrapper">
-                    {{ range .images }}
-                      {{ with $.Resources.GetMatch .image }}
-                        {{ $imageSmall := .Resize "500x" }}
-                        {{ $imageMedium := .Resize "800x" }}
 
-                        <div class="swiper-slide">
-                          <img
-                            alt="{{ $title }}"
-                            src="{{ $imageSmall.RelPermalink }}"
-                            srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
-                            data-sizes="auto"
-                            class="c-teaser__img" />
-                        </div>
+                {{/* Gallery */}}
+                {{ if .gallery }}
+                  {{ partial "components/gallery" (dict "context" $ "title" $title "images" .images) }}
+
+                {{/* Fading images */}}
+                {{ else }}
+                  <div class="swiper-container" data-teaser-fader>
+                    <div class="swiper-wrapper">
+                      {{ range .images }}
+                        {{ with $.Resources.GetMatch .image }}
+                          {{ $imageSmall := .Resize "500x" }}
+                          {{ $imageMedium := .Resize "800x" }}
+
+                          <div class="swiper-slide">
+                            <img
+                              alt="{{ $title }}"
+                              src="{{ $imageSmall.RelPermalink }}"
+                              srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                              data-sizes="auto"
+                              class="c-teaser__img" />
+                          </div>
+                        {{ end }}
                       {{ end }}
-                    {{ end }}
+                    </div>
                   </div>
-                </div>
+                {{ end }}
               {{ end }}
             </div>
 
