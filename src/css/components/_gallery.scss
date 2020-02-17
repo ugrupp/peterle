@@ -1,0 +1,49 @@
+//
+// Galleries
+// --------------------------------------------------
+
+$gallery-fixed-height: 300px;
+$gallery-fixed-height-md: 400px;
+$gallery-fixed-height-lg: 490px;
+
+.c-gallery {
+  display: block;
+  position: relative;
+  background-color: $color-content-ci;
+}
+
+// Image
+.c-gallery__img-wrapper {
+}
+
+.c-gallery__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all $transition-time-long;
+
+  &.lazyload,
+  &.lazyloading {
+    opacity: 0;
+  }
+
+  .c-gallery--fixed-height & {
+    object-fit: cover;
+    height: $gallery-fixed-height;
+
+    @include mappy-bp(md) {
+      height: $gallery-fixed-height-md;
+    }
+
+    @include mappy-bp(lg) {
+      height: $gallery-fixed-height-lg;
+    }
+  }
+}
+
+.c-gallery__controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}

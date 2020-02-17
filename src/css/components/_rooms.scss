@@ -1,0 +1,47 @@
+//
+// Rooms
+// --------------------------------------------------
+
+.c-room__content {
+  margin-top: rem(30px);
+}
+
+.c-room__cols {
+  margin-top: rem(24px);
+
+  @include mappy-bp(xs) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.c-room__info-col {
+  flex-grow: 1;
+}
+
+.c-room__cta-col {
+  margin-top: rem(20px);
+
+  @include mappy-bp(xs) {
+    margin-top: 0;
+    margin-left: rem(15px);
+  }
+}
+
+.c-room__info {
+  padding-left: rem(20px);
+  border-left: 1px dashed rgba($color-gray-6, .5);
+}
+
+.c-room__info-label {
+  margin-top: rem(20px);
+  display: flex;
+  align-items: center;
+  @include typi(richtext);
+
+  svg {
+    height: rem(11px);
+    width: rem(11px);
+    margin-right: rem(10px);
+  }
+}

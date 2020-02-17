@@ -1,0 +1,55 @@
+{{ with .Resources.GetMatch "rooms*.md" }}
+  <div class="c-rooms">
+    <div class="c-rooms__grid o-grid">
+      {{/* First cell: intro */}}
+      <div class="o-grid__col" data-reveal>
+        <div class="c-richtext{{ with .Params.richtextSize }} c-richtext--{{.}}{{end}}">
+          {{ .Content }}
+        </div>
+      </div>
+
+      {{/* Other cells: Galleries */}}
+      {{ range .Params.rooms }}
+        <div class="o-grid__col" data-reveal>
+          <div class="c-room">
+            {{/* Gallery */}}
+            <div class="c-room__gallery">
+              {{ partial "components/gallery" (dict "context" $ "title" .title "images" .images) }}
+            </div>
+
+            {{/* Content */}}
+            <div class="c-room__content">
+              {{/* Headline */}}
+              <div class="c-richtext">
+                <h3 class="c-headline c-headline--xs c-headline--italic">{{ .title }}</h3>
+              </div>
+
+              <div class="c-room__cols">
+                <div class="c-room__info-col">
+                  {{/* Text */}}
+                  <div class="c-room__info">
+                    <div class="c-richtext">
+                      {{.text | markdownify}}
+                    </div>
+                  </div>
+
+                  <div class="c-room__info-label">
+                    {{ partial "components/svg" (dict "svg" "trenner") }}
+                    Unsere Inklusivleistungen
+                  </div>
+                </div>
+
+                <div class="c-room__cta-col">
+                  <a href="#" class="c-button c-button--xs-xs">
+                    Jetzt buchen
+                    {{ partial "components/svg" (dict "svg" "pfeil") }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

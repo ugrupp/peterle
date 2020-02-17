@@ -4,7 +4,7 @@ title: Inklusivleistungen
 features:
   hardware:
     title1: Was wir für Sie tun
-    image1: schlafen_02.jpg
+    image1: section-inklusivleistungen.jpg
     links1:
     - title: Wir holen Sie vom Bahnhof ab
     - title: Wir stellen Ihnen Schwarzwälder Mineralwasser bei Anreise bereit

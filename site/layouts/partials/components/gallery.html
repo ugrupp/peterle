@@ -1,0 +1,37 @@
+{{$context := .context}}
+{{$title := .title}}
+
+<div class="c-gallery c-gallery--fixed-height" data-gallery>
+  <div class="c-gallery__img-wrapper">
+    {{ if index . "images" }}
+      <div class="swiper-container" data-gallery-swiper>
+        <div class="swiper-wrapper">
+          {{ range .images }}
+            {{ with $context.Resources.GetMatch .image }}
+              {{ $imageSmall := .Resize "500x" }}
+              {{ $imageMedium := .Resize "800x" }}
+
+              <div class="swiper-slide">
+                <img
+                  alt="{{ $title }}"
+                  src="{{ $imageSmall.RelPermalink }}"
+                  srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                  data-sizes="auto"
+                  class="c-gallery__img" />
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+
+      {{/* Navigation */}}
+      {{ if gt (len .images) 1 }}
+        <div class="c-gallery__controls">
+          <a href="javascript:void(0);" class="c-button c-button--secondary c-button--xs-xs c-button--icon-only" data-gallery-next>
+            {{ partial "components/svg" (dict "svg" "pfeil") }}
+          </a>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
