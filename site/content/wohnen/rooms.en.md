@@ -1,10 +1,12 @@
 ---
+includedServicesCTA: Included services
+bookingCTA: Book now
 rooms:
 - title: Doppelzimmer mit Balkon, Südseite
   text: |
     25 m²  
-    Dusche, Föhn, TV  
-    Gratis WLAN
+    Shower, hair dryer, TV  
+    Free wifi
   images:
   - image: doppel-balkon-sued/01.jpg
     title: Doppelzimmer mit Balkon, Südseite
@@ -18,8 +20,8 @@ rooms:
 - title: Doppelzimmer mit Balkon, Ost-Westseite
   text: |
     22 m²  
-    Dusche, Föhn, TV  
-    Gratis WLAN
+    Shower, hair dryer, TV  
+    Free wifi
   images:
   - image: doppel-balkon-west/01.jpg
     title: Doppelzimmer mit Balkon, Ost-Westseite
@@ -31,8 +33,8 @@ rooms:
 - title: Doppelzimmer Südseite
   text: |
     27 m²  
-    Dusche, Föhn, TV  
-    Gratis WLAN
+    Shower, hair dryer, TV  
+    Free wifi
   images:
   - image: doppel-sued/01.jpg
     title: Doppelzimmer Südseite
@@ -46,8 +48,8 @@ rooms:
 - title: Einzelzimmer mit Balkon
   text: |
     16 m²  
-    Dusche, Föhn, TV  
-    Gratis WLAN
+    Shower, hair dryer, TV  
+    Free wifi
   images:
   - image: einzel-balkon/01.jpg
     title: Einzelzimmer mit Balkon
@@ -57,8 +59,8 @@ rooms:
 - title: Einzelzimmer
   text: |
     12 m²  
-    Dusche, Föhn, TV  
-    Gratis WLAN
+    Shower, hair dryer, TV  
+    Free wifi
   images:
   - image: einzel/01.jpg
     title: Einzelzimmer
@@ -66,8 +68,8 @@ rooms:
 - title: Mehrbettzimmer
   text: |
     29 m²  
-    Dusche, Föhn, TV  
-    Gratis WLAN
+    Shower, hair dryer, TV  
+    Free wifi
   images:
   - image: mehrbett/01.jpg
     title: Mehrbettzimmer

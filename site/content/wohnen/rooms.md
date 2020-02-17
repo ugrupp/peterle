@@ -1,4 +1,6 @@
 ---
+includedServicesCTA: Unsere Inklusivleistungen
+bookingCTA: Jetzt buchen
 rooms:
 - title: Doppelzimmer mit Balkon, Südseite
   text: |

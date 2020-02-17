@@ -39,6 +39,12 @@
   align-items: center;
   @include typi(richtext);
 
+  &,
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
+
   svg {
     height: rem(11px);
     width: rem(11px);

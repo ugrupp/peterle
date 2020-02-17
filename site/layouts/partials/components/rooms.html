@@ -1,4 +1,6 @@
 {{ with .Resources.GetMatch "rooms*.md" }}
+  {{ $includedServicesCTA := .Params.includedServicesCTA }}
+  {{ $bookingCTA := .Params.bookingCTA }}
   <div class="c-rooms">
     <div class="c-rooms__grid o-grid">
       {{/* First cell: intro */}}
@@ -33,15 +35,15 @@
                     </div>
                   </div>
 
-                  <div class="c-room__info-label">
+                  <a class="c-room__info-label" href="#features" data-scroll-content>
                     {{ partial "components/svg" (dict "svg" "trenner") }}
-                    Unsere Inklusivleistungen
-                  </div>
+                    {{ $includedServicesCTA }}
+                  </a>
                 </div>
 
                 <div class="c-room__cta-col">
                   <a href="javascript:void(0);" class="c-button c-button--xs-xs d21-trigger-ibe" data-d21="{'room_id':{{.id}}}">
-                    Jetzt buchen
+                    {{ $bookingCTA }}
                     {{ partial "components/svg" (dict "svg" "pfeil") }}
                   </a>
                 </div>
