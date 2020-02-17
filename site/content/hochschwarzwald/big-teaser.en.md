@@ -1,5 +1,5 @@
 ---
-title: In the middle of the high Black Forest
+title: In the middle of the Black Forest
 ---
 
-**In the middle of the high Black Forest,** <span>forests, mountains and lakes within a short distance, yet within an hour in Alsace, on the Rhine or in Switzerland: nature, culture, family-friendly, sightseeing and shopping are not far away</span>
+**Right in the middle of the southern Black Forest region,** <span>with forest, mountains and lakes within walking distance, and only an hour’s drive from Alsace, the Rhine river and Switzerland, nature, culture, sightseeing, shopping and family-friendly fun are all within arm’s reach.</span>

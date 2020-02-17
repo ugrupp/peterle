@@ -2,11 +2,11 @@
 image: essen_02.jpg
 alt: Eating in Hotel & Restaurant Peterle
 linkboxes:
-- title: "Overview of our offered food:"
+- title: "Our menu:"
   icon: speisekarte
   url: "Speisekarte_en.pdf"
   buttontext: Menu
-- title: "A selection of our wine:"
+- title: "Our wine selection:"
   icon: weinkarte
   url: "Weinkarte.pdf"
   buttontext: Wine selection

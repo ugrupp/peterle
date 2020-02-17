@@ -1,6 +1,6 @@
 ---
-title: High black forest
-subtitle: Pure relaxation and pure nature
+title: Black Forest
+subtitle: Enjoy the restorative power of nature
 topSectionTitle: 'History'
 layout: hochschwarzwald
 menu:
@@ -8,16 +8,16 @@ menu:
     weight: 40
 ---
 
-The high Black Forest is a geographically not exactly outlined area in the south of the Black Forest, but its center is around the Feldberg massif, with 1493 MA SL highest elevation of Germany outside the Alps.
+Our hotel and restaurant is located in the southern part of the Black Forest, not far from the Feldberg mountain. The tallest German mountain outside of the Alps overlooks its surroundings at 1,493 metres above sea level.
 
-Individual finds, e.g. at the Schluchsee, occupy the first people already in the Neolithic age. The Romans, who settled in the Rhine plain and the Baar, also crossed the high Black forest on paved roads. They called him ' Marciana Silva ' (boundary forest).
+Various discoveries nearby suggest that Neolithic people lived in the area, including at locations such as the Schluchsee. There is also evidence of the Romans — who had settlements in the Rhine Rift Valley and the Baar region — having traversed the Black Forest on paved roads. Back then, they referred to the region as “marciana silva”, or border forest.
 
-However, a permanent settlement takes place only later from the Western Valleys (Monastery of St. Trudpert, 9th century, Convent of St. Blasien 948) and from the east from the Baar (Rötenbach, 819).
+However, it wasn’t until much later that a population settled permanently, with people converging from the western valleys (St. Trudpert’s Abbey in the 9th century and St. Blaise Abbey in 948) and from the Baar plateau in the east (Rötenbach in 819).
 
-The originally dense mixed forest was cleared and used by fiefdom allocation of the monasteries, settlement sites and villages were created.
+The original dense mixed coniferous forest was cleared and used to host fiefdoms granted by the abbeys, which in turn evolved into settlements and villages.
 
-As a result, the still impressive Black Forest farms were created, large farm houses with the high rooms with small outbuildings, in which the people living in the partly secluded valleys supplied themselves self-sufficient.
+This gave way to impressive Black Forest farms, whose inhabitants were able to live self-sufficiently. Many of these large, long-roofed houses with smaller annexes are still standing in secluded valleys today.
 
-In the middle of the 19th century the Black Forest was almost completely cleared by intensive use and was reforested under the leadership of the Baden ducal Forest administration lare-scale with rapidly growing spruce trees. At that time, the image of the Dark Fir forest, which is still shaping today, was created, which has been solidified by home films and advertising over the last few decades.
+By the mid-19th century, intensive land use had almost completely cleared the Black Forest, leading the Grand Duchy of Baden’s forest administration to head up an extensive reforestation programme using fast-growing spruce trees. This was the origin of the image we now have in our mind’s eye of a dense, fir-covered forest. Advertising and Heimatfilme — German-language films with a rural setting — have helped to reinforce the picture.
 
-Today the Black Forest, with over 21 million overnight stays per year, is one of the most important tourist regions in Germany. Nevertheless, apart from the great sights, many original and authentic places have been preserved.
+Today, the Black Forest is one of Germany’s major tourist destinations, boasting over 21 million overnight stays per year. Away from the more famous sights, there are still many spots that are as pristine and quiet as they have always been.
