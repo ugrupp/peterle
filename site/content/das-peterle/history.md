@@ -38,7 +38,7 @@ events:
     1979  
     —  
     laufend
-  text: Unser Haus erfährt regelmäßig Veränderung und Anpassung. Seit über 40 Jahren wird immer wieder angebaut, umgebaut, modernisiert. Meilensteine finden Sie in dieser Historie, Details erfahren Sie in unserer [Umwelterklärung](Umwelterklaerung_Hotel_Peterle_2017.pdf).
+  text: Unser Haus erfährt regelmäßig Veränderung und Anpassung. Seit über 40 Jahren wird immer wieder angebaut, umgebaut, modernisiert. Meilensteine finden Sie in dieser Historie, Details erfahren Sie in unserer [Umweltinformation](Umweltinformation_Hotel_Peterle_2019.pdf).
 
 - date: |
     1979  

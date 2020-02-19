@@ -38,7 +38,7 @@ events:
     1979  
     —  
     laufend
-  text: We may cherish our traditions, but we’re no strangers to change. For over 40 years now, we have been continually expanding, renovating and modernising our hotel. This history outlines the important milestones; more details can be found in our [environmental statement](Umwelterklaerung_Hotel_Peterle_2017.pdf).
+  text: We may cherish our traditions, but we’re no strangers to change. For over 40 years now, we have been continually expanding, renovating and modernising our hotel. This history outlines the important milestones; more details can be found in our [environmental information](Umweltinformation_Hotel_Peterle_2019.pdf).
 
 - date: |
     1979  
