@@ -29,6 +29,12 @@ rooms:
     title: Doppelzimmer mit Balkon, Ost-Westseite
   - image: doppel-balkon-west/03.jpg
     title: Doppelzimmer mit Balkon, Ost-Westseite
+  - image: doppel-balkon-west/04.jpg
+    title: Doppelzimmer mit Balkon, Ost-Westseite
+  - image: doppel-balkon-west/05.jpg
+    title: Doppelzimmer mit Balkon, Ost-Westseite
+  - image: doppel-balkon-west/06.jpg
+    title: Doppelzimmer mit Balkon, Ost-Westseite
   id: 121365
 - title: Doppelzimmer Südseite
   text: |
