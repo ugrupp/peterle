@@ -2,7 +2,7 @@
 of our restaurant:
 <br><br>
 **opened daily**  
-from 5 pm  
+from 5:30 pm  
 **sundays and holidays**  
 from 12 noon
 <br><br>
