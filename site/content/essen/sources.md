@@ -120,7 +120,7 @@ sources:
     79291 Merdingen  
     [www.gretzmeier.de](http://www.gretzmeier.de)
 - title: Weingut Jähnisch
-  address:
+  address: |
     Hofmattenweg 19  
     79238 Ehrenkirchen  
     [www.weingut-jaehnisch.de](http://www.weingut-jaehnisch.de)
@@ -148,7 +148,7 @@ sources:
   address: |
     Ebenunger Straße 21  
     76547 Sinzheim  
-    www.weingut-kopp.com  
+    [www.weingut-kopp.com](http://www.weingut-kopp.com)  
 - title: Enderle & Moll
   address: |
     Hinterhöfen 4  
