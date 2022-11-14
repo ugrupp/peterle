@@ -79,4 +79,6 @@ events:
     —  
     2017
   text: The main building’s hallway is redesigned. LED lighting is installed. Two bedrooms and bathrooms are renovated. The family suites are completely renovated. The guesthouse is rewired and WiFi access is provided in all bedrooms.
+  
+- image: history-4.jpg
 ---

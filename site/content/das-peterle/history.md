@@ -79,4 +79,6 @@ events:
     —  
     2017
   text: Neugestaltung Flur Haupthaus. Einbau LED-Beleuchtung. Renovierung von 2 Zimmern und Bäder. Komplettrenovierung der Familienzimmer. Verkabelung des Gästehauses, W-LAN in allen Gästezimmern.
+  
+- image: history-4.jpg
 ---
