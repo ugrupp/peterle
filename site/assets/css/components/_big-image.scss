@@ -1,0 +1,36 @@
+//
+// Big image
+// --------------------------------------------------
+
+@use "sass:math";
+
+.c-big-image {
+  position: relative;
+}
+
+// Image
+.c-big-image__img-wrapper {
+  background-color: $color-content-ci;
+  height: rem(300px);
+
+  @include mappy-bp(sm) {
+    height: rem(500px);
+  }
+
+  @include mappy-bp(md) {
+    height: rem(800px);
+  }
+}
+
+.c-big-image__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all $transition-time-long;
+
+  &.lazyload,
+  &.lazyloading {
+    opacity: 0;
+  }
+}

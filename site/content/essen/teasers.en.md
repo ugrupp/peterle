@@ -7,6 +7,11 @@ teasers:
     - image: galerie-1.jpg
     - image: galerie-2.jpg
     - image: galerie-3.jpg
+    - image: galerie-4.jpg
+    - image: galerie-5.jpg
+    - image: galerie-6.jpg
+    - image: galerie-7.jpg
+    - image: galerie-8.jpg
   fixedHeight: true
 ---
 

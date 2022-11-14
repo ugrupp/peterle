@@ -10,7 +10,7 @@ teasers:
   offset: -170px
   fixedHeight: true
 - title: Essen
-  image: teaser-food.jpg
+  image: teaser-food-2.jpg
   url: /essen/
   fixedHeight: true
 ---
