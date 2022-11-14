@@ -17,7 +17,6 @@ html {
 }
 
 body {
-  background-color: red;;
   color: $color-content;
   @include font-smoothing; // applied globally, since even the dark-on-white font looks ugly here.
 
