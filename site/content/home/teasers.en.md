@@ -2,16 +2,16 @@
 teasers:
 - title: Peterle
   image: teaser-peterle.jpg
-  url: /peterle/
+  url: /en/peterle/
   fixedHeight: true
 - title: Our Rooms
   image: teaser-sleep.jpg
-  url: /rooms/
+  url: /en/rooms/
   offset: -170px
   fixedHeight: true
 - title: Cuisine
   image: teaser-food.jpg
-  url: /cuisine/
+  url: /en/cuisine/
   fixedHeight: true
 ---
 
