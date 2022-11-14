@@ -117,6 +117,25 @@ $footer-offset-md: 240px;
   }
 }
 
+.c-footer__map-placeholder {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  a {
+    color: $color-gray-6;
+    transition: color $transition-time-default;
+
+    &:hover,
+    &:focus {
+      color: $color-content-ci;
+    }
+  }
+}
+
 .c-footer__meta {
   padding-top: rem(60px);
   padding-bottom: rem(60px);

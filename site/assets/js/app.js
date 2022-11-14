@@ -15,7 +15,6 @@ import './modules/scroll-to';
 import './modules/gmap';
 import './modules/teaser-fader';
 import './modules/gallery';
-import './modules/cookieconsent';
 
 import Menu from './modules/menu';
 import Archive from './modules/archive';

@@ -1,17 +1,21 @@
 ---
 ---
 
-{{< headline level="3" class="c-headline--richtext" title="Browser-Plugin" >}}
-
-Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch den Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: https://tools.google.com/dlpage/gaoptout?hl=de
-
 {{< headline level="3" class="c-headline--richtext" title="Google Maps" >}}
 
-Diese Webseite verwendet das Produkt Google Maps von Google Inc. Durch Nutzung dieser Webseite erklären Sie sich mit der Erfassung, Bearbeitung sowie Nutzung der automatisiert erhobenen Daten durch Google Inc, deren Vertreter sowie Dritter einverstanden. Die Nutzungsbedingungen von Google Maps finden sie unter http://google.com/intl/de_de/help/terms_maps.html.
+Diese Seite nutzt den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google“), Gordon House, Barrow Street, Dublin 4, Irland. Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung. Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung ist jederzeit widerrufbar. Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier: https://privacy.google.com/businesses/gdprcontrollerterms/ und https://privacy.google.com/businesses/gdprcontrollerterms/sccs/. Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google: https://policies.google.com/privacy?hl=de.
+
+{{< headline level="3" class="c-headline--richtext" title="Adobe Fonts" >}}
+
+Diese Website nutzt zur einheitlichen Darstellung bestimmter Schriftarten Web Fonts von Adobe. Anbieter ist die Adobe Systems Incorporated, 345 Park Avenue, San Jose, CA 95110-2704, USA (Adobe). Beim Aufruf dieser Website lädt Ihr Browser die benötigten Schriftarten direkt von Adobe, um sie Ihrem Endgerät korrekt anzeigen zu können. Dabei stellt Ihr Browser eine Verbindung zu den Servern von Adobe in den USA her. Hierdurch erlangt Adobe Kenntnis darüber, dass über Ihre IP-Adresse diese Website aufgerufen wurde. Bei der Bereitstellung der Schriftarten werden nach Aussage von Adobe keine Cookies gespeichert. Die Speicherung und Analyse der Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der einheitlichen Darstellung des Schriftbildes auf seiner Website. Sofern eine entsprechende Einwilligung abgefragt wurde (z. B. eine Einwilligung zur Speicherung von Cookies), erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung ist jederzeit widerrufbar. Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier: https://www.adobe.com/de/privacy/eudatatransfers.html. Nähere Informationen zu Adobe Fonts erhalten Sie unter: https://www.adobe.com/de/privacy/policies/adobe-fonts.html. Die Datenschutzerklärung von Adobe finden Sie unter: https://www.adobe.com/de/privacy/policy.html
 
 {{< headline level="3" class="c-headline--richtext" title="Verwendung des Onlinebuchungstools" >}}
 
 Unsere Webseite verwendet zur Ermöglichung der Onlinebuchungen von Unterkunftsleistungen und sonstigen Reiseleistungen, sowie zur Abwicklungen von Anfragen das Onlinebuchungstool DIRS21 (nachfolgend „OBT“) der Firma TourOnline AG, Borsigstraße 26, 73249 Wernau, Deutschland (nachfolgend „TOAG“). Im Rahmen des OBT verarbeitet die TOAG die Daten als Verantwortlicher. Die Hinweise und Bestimmungen zum Datenschutz finden Sie in der Datenschutzerklärung der TOAG zum OBT, welche Sie jederzeit aus dem OBT heraus aufrufen können oder unter http://www.dirs21.de/datenschutz einsehen können.
+
+{{< headline level="3" class="c-headline--richtext" title="Social Wall" >}}
+
+Auf unserer Webseite werden Inhalte von unserem Social Media Kanal angezeigt (Social Wall). Dafür nutzen wir das Plugin „Curator“. Anbieter von diesem ist die Curator Group Pty Ltd, 53619769112, 69 Ruthven Street, Bondi Junction, New South Wales, 2022 Australia. Für diesen Dienst werden Daten von Facebook ausgelesen und auf der Webseite anzeigt und verlinkt. Hier finden Sie die Privacy policy von Curator: https://curator.io/privacy-policy/
 
 {{< headline level="3" class="c-headline--richtext" title="Facebook-Plugins" >}}
 
