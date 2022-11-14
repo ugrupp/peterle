@@ -129,7 +129,11 @@
 
     @include mappy-bp($bp-menu-collapse) {
       position: relative;
-      transition: all $transition-time-default;
+
+      // Word around some very weird loading behavior bug (blue text on load)
+      .wf-active & {
+        transition: color $transition-time-default;
+      }
 
       &::before {
         content: '';
