@@ -1,21 +1,25 @@
 dist/
-site/static/images
-site/static/fonts
-site/static/css
-site/static/app.bundle.js
-site/static/head.bundle.js
 
 site/resources/_gen
 
 # Created by https://www.gitignore.io/api/osx,hugo,node,macos,windows
 
 ### Hugo ###
-# Hugo binary
-hugo*
+# Generated files by hugo
+/site/resources/_gen/
+/site/assets/jsconfig.json
+hugo_stats.json
 
-# Generated files at default location
-/public/
-/resources/_gen
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/site/.hugo_build.lock
+
+# End of https://www.toptal.com/developers/gitignore/api/hugo
+
 ### macOS ###
 *.DS_Store
 .AppleDouble

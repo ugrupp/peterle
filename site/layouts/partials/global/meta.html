@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="index,follow"/>
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
 
 {{/* Title */}}
 {{ define "site_title" }}{{ if .Params.metatitle }}{{ .Params.metatitle }}{{ else }}{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{- with .Params.subtitle }} | {{ . | plainify }}{{ end }}{{ end }}{{ end }}

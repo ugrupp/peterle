@@ -1,0 +1,40 @@
+//
+// Scroll hint
+// --------------------------------------------------
+
+@use "sass:math";
+
+$scroll-hint-padding: 10px;
+$scroll-hint-height: 8px;
+$scroll-hint-width: 40px;
+
+// can be <a>
+.c-scroll-hint {
+  display: inline-block;
+  color: $color-content-ci;
+  padding: rem($scroll-hint-padding); // for tapping
+  transform: rotate(90deg); // default: down
+
+
+  svg {
+    width: rem($scroll-hint-width);
+    height: rem($scroll-hint-height);
+    transform-origin: center center;
+  }
+}
+
+.c-scroll-hint--inverted {
+  color: $color-white;
+}
+
+.c-scroll-hint--up {
+  transform: rotate(-90deg);
+}
+
+.c-scroll-hint--align-left {
+  margin-left: rem(math.div(($scroll-hint-width - $scroll-hint-height), -2) - $scroll-hint-padding);
+}
+
+.c-scroll-hint--align-right {
+  margin-right: rem(math.div(($scroll-hint-width - $scroll-hint-height), -2) - $scroll-hint-padding);
+}

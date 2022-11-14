@@ -1,0 +1,54 @@
+//
+// Sources
+// --------------------------------------------------
+
+@use "sass:math";
+
+$bp-sources-collapse: sm;
+
+.c-sources__list {
+  @include mappy-bp($bp-sources-collapse) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.c-sources__source {
+  @include mappy-bp(max $bp-grid-collapse) {
+    &:not(:first-of-type) {
+      padding-top: rem(30px);
+    }
+  }
+
+  @include mappy-bp($bp-grid-collapse) {
+    width: 25%;
+    padding-top: rem($grid-gutter);
+    padding-left: rem(math.div($grid-gutter, 2));
+    padding-right: rem(math.div($grid-gutter, 2));
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      padding-top: 0;
+    }
+
+    &:nth-child(4n + 1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(4n + 4) {
+      padding-right: 0;
+    }
+  }
+}
+
+.c-richtext {
+  .c-sources__source-title {
+    font-weight: $font-weight-regular !important;
+  }
+
+  .c-sources__source-address {
+    margin-top: 0 !important;
+  }
+}

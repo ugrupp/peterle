@@ -1,5 +1,5 @@
 baseurl = "/"
-DefaultContentLanguage = "de"
+defaultContentLanguage = "de"
 title = "Hotel & Restaurant Peterle"
 
 enableRobotsTXT = true

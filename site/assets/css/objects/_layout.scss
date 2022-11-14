@@ -1,0 +1,111 @@
+//
+// Layout
+// --------------------------------------------------
+
+.o-main {
+  padding-top: 100vh;
+}
+
+.o-main--no-hero {
+  // default: top-spacing to match fixed topbar
+  padding-top: $topbar-alpha-height + $topbar-beta-height;
+
+  @include mappy-bp(max $bp-menu-collapse) {
+    padding-top: $topbar-alpha-height;
+  }
+}
+
+.o-main__content {
+  position: relative;
+  z-index: index($z-index, content);
+}
+
+// scroll hint
+.o-main__scroll-hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: rem(20px);
+
+  @include mappy-bp(md) {
+    top: rem(40px);
+  }
+}
+
+// default section
+.o-main__section {
+  background-color: $color-white;
+  padding-top: rem(100px);
+  padding-bottom: rem(100px);
+  background-repeat: no-repeat;
+
+  @include mappy-bp(md) {
+    padding-top: rem(160px);
+    padding-bottom: rem(160px);
+  }
+}
+
+// default top section
+.o-main__section--top {
+  @include mappy-bp(md) {
+    padding-top: rem(240px);
+  }
+}
+
+.o-main__section--white-flowers-left {
+  background-color: $color-brown-lightest;
+  background-image: url('/images/muster-links.png');
+  background-position: left top;
+}
+
+.o-main__section--white-flowers-right {
+  background-color: $color-brown-lightest;
+  background-image: url('/images/muster-rechts.png');
+  background-position: right top;
+}
+
+.o-main__section--white-opaque-flowers-right {
+  background-color: $color-brown-lightest;
+  background-image: url('/images/muster-rechts-opaque.png');
+  background-position: right top;
+}
+
+// dark flowers left
+.o-main__section--dark-flowers-left {
+  background-color: $color-white;
+  background-image: url('/images/muster-dunkel-links.png');
+  background-position: left top;
+}
+
+// dark flowers right
+.o-main__section--dark-flowers-right {
+  background-color: $color-white;
+  background-image: url('/images/muster-dunkel-rechts.png');
+  background-position: right top;
+}
+
+// wood background
+.o-main__section--bg-wood {
+  background-image: url('/images/holz.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: $color-content-ci;
+  color: $color-white;
+}
+
+// lightest brown background-color
+.o-main__section--bg-lightest {
+  background-color: $color-brown-lightest;
+}
+
+// ci background-color
+.o-main__section--bg-ci {
+  background-color: $color-content-ci;
+  color: $color-white;
+}
+
+// no pad
+.o-main__section--no-pad {
+  padding-top: 0;
+  padding-bottom: 0;
+}

@@ -5,9 +5,9 @@ module.exports = {
     "stylelint-config-standard",
     "stylelint-config-recommended-scss"
   ],
-  "ignoreFiles": "./src/css/vendor/**",
   "rules": {
     "max-empty-lines": 2,
+    "scss/comment-no-empty": null,
     "declaration-empty-line-before": null,
     "at-rule-no-vendor-prefix": true,
     "media-feature-name-no-vendor-prefix": true,
