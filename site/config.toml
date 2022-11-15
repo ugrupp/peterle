@@ -16,3 +16,6 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
   facebookURL = "https://www.facebook.com/pages/Hotel-Peterle/132155553500218"
+
+[markup.goldmark.renderer]
+unsafe= true
