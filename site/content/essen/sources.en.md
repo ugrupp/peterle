@@ -1,11 +1,6 @@
 ---
 title: Our sources
 sources:
-- title: Kronen-Metzgerei
-  address: |
-    W. Strohmeier  
-    Talstraße 20  
-    79677 Schönau im Schwarzwald
 - title: Kaltenbach Fleischvertrieb
   address: |
     Brandhof 12  
@@ -56,12 +51,6 @@ sources:
     Katzentalweg 1  
     79289 Horben  
     [www.ringlihof.de](http://www.ringlihof.de)
-- title: Wilmershof
-  address: |
-    Familie Fehrenbach  
-    Schwärzenbach 11  
-    79822 Neustadt  
-    [www.wilmershof.de](http://www.wilmershof.de)
 - title: Blattert-Mühle
   address: |
     Konstantin-Fehrenbach-Str. 33  
@@ -219,6 +208,10 @@ sources:
     Stählemühle 1  
     78253 Eigeltingen  
     [www.staehlemuehle.de](http://www.staehlemuehle.de)
-
+- title: Schwarzwälder Eismanufaktur
+  address: |
+    Wüste 2  
+    79227 Schallstadt  
+    [www.hofeis.de](https://www.hofeis.de)
 
 ---
