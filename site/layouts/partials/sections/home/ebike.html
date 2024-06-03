@@ -1,0 +1,62 @@
+{{ with .Resources.GetMatch "ebike*.md" }}
+  <div class="c-ebike">
+    {{ with .Params.label }}
+      <div class="c-ebike__label">
+        <div class="o-container">
+          <div class="c-ebike__label-inner">
+            <h3 class="c-headline c-headline--xs c-headline--italic">{{ . }}</h3>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+
+    <div class="c-ebike__img-wrapper">
+      {{ with $.Resources.GetMatch .Params.bg }}
+        {{ $imageSmall := .Resize "500x" }}
+        {{ $imageMedium := .Resize "1000x" }}
+        {{ $imageBig := .Resize "2000x" }}
+
+        <img
+          alt="E-Bike"
+          src="{{ $imageSmall.RelPermalink }}"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+          data-sizes="auto"
+          class="c-ebike__img lazyload" />
+      {{ end }}
+    </div>
+
+    <div class="o-container c-ebike__content">
+      <div class="o-grid">
+        <div class="o-grid__col">
+          <div class="c-ebike__separator">
+            {{ partial "components/separator" (dict "inverted" 1) }}
+          </div>
+
+          <h2 class="c-ebike__title c-headline">{{ .Params.title }}</h2>
+
+          {{ with .Params.cta }}
+            <div class="c-ebike__cta">
+              <a href="{{ .url }}" target="_blank" class="c-button">
+                {{ .text }}
+                {{ partial "components/svg" (dict "svg" "pfeil") }}
+              </a>
+            </div>
+          {{ end }}
+        </div>
+
+        {{ with .Params.partnerText }}
+          <div class="o-grid__col">
+            <div class="c-ebike__partner">
+              <div class="c-richtext c-richtext--inverted">
+                <p>
+                  {{ . | markdownify }}
+                </p>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{end}}

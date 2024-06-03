@@ -1,0 +1,106 @@
+.c-ebike {
+  position: relative;
+  z-index: 0;
+  padding-top: rem(100px);
+  padding-bottom: rem(100px);
+
+  @include mappy-bp(md) {
+    padding-top: rem(160px);
+    padding-bottom: rem(160px);
+  }
+
+  @include mappy-bp(xl) {
+    padding-top: rem(240px);
+    padding-bottom: rem(240px);
+  }
+}
+
+// Label
+.c-ebike__label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.c-ebike__label-inner {
+  position: relative;
+}
+
+.c-ebike__label h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  background-color: $color-brown-lightest;
+  color: $color-content-ci;
+  padding: 1em 1.25em;
+}
+
+// BG Image
+.c-ebike__img-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    content: "";
+    background-color: $color-green-default;
+    opacity: .85;
+  }
+}
+
+.c-ebike__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all $transition-time-long;
+
+  &.lazyload,
+  &.lazyloading {
+    opacity: 0;
+  }
+}
+
+// Content
+.c-ebike__content {
+  position: relative;
+  z-index: 10;
+  color: $color-white;
+}
+
+.c-ebike__separator {
+  margin-bottom: rem(20px);
+
+  @include mappy-bp(sm) {
+    margin-bottom: rem(32px);
+  }
+}
+
+// CTA
+.c-ebike__cta {
+  margin-top: rem(32px);
+
+  @include mappy-bp(sm) {
+    margin-top: rem(64px);
+  }
+}
+
+// Partner
+.c-ebike__partner {
+  min-height: 100%;
+  display: flex;
+
+  > * {
+    margin-top: auto;
+  }
+}
