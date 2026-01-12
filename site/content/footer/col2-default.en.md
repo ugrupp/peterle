@@ -6,4 +6,4 @@ from 5:30 pm
 **sundays and holidays**  
 from 12 noon
 <br><br>
-Thursday closing day
+Wednesday & Thursday closing day
