@@ -6,4 +6,5 @@ ab 17.30 Uhr
 **sonn- und feiertags**  
 ab 12.00 Uhr
 <br><br>
+Mittwoch &
 Donnerstag Ruhetag
