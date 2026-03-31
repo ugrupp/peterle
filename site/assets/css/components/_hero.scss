@@ -34,6 +34,11 @@
   transition: opacity $transition-time-long, transform 7s linear;
   transform: scale(1);
   will-change: transform;
+
+  &.lazyload,
+  &.lazyloading {
+    opacity: 0;
+  }
 }
 
 .swiper-slide-active .c-hero__img {

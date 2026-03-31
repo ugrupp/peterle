@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let unveilSlideImages = (swiper) => {
     swiper.slides.each((_, slide) => {
-      console.log("Unveiling images in slide:", slide);
       if (
         !slide ||
         !window.lazySizes ||
