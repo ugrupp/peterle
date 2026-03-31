@@ -31,13 +31,13 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  transition: all $transition-time-long;
+  transition: opacity $transition-time-long, transform 7s linear;
+  transform: scale(1);
+  will-change: transform;
+}
 
-  &.lazyload,
-  &.lazyloading {
-    opacity: 0;
-    transform: scale(1.05);
-  }
+.swiper-slide-active .c-hero__img {
+  transform: scale(1.15);
 }
 
 // Content
