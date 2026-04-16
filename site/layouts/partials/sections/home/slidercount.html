@@ -1,6 +1,16 @@
 <div class="c-slidercount">
   <div class="o-container">
     <div class="c-slidercount__inner">
+      <div class="c-season-toggles">
+        <button class="c-season-toggle" data-season-toggle="summer" title="Zu Sommerbildern wechseln">
+          {{ partial "components/svg" (dict "svg" "sommer" "classes" "c-season-toggle__icon c-season-toggle__icon--inactive") }}
+          {{ partial "components/svg" (dict "svg" "sommer-aktiv" "classes" "c-season-toggle__icon c-season-toggle__icon--active") }}
+        </button>
+        <button class="c-season-toggle" data-season-toggle="winter" title="Zu Winterbildern wechseln">
+          {{ partial "components/svg" (dict "svg" "winter" "classes" "c-season-toggle__icon c-season-toggle__icon--inactive") }}
+          {{ partial "components/svg" (dict "svg" "winter-aktiv" "classes" "c-season-toggle__icon c-season-toggle__icon--active") }}
+        </button>
+      </div>
       <a href="javascript:void(0);" class="c-button c-button--xs-xs" data-slider-next>
         <span data-slider-pagination></span>
         {{ partial "components/svg" (dict "svg" "pfeil") }}

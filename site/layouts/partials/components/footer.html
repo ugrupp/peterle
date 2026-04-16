@@ -7,7 +7,7 @@
 <footer class='c-footer{{if eq $layout "plain" }} c-footer--plain{{end}}'>
   {{/* BG Image */}}
   <div class="c-footer__img-wrapper">
-    {{ with .Resources.GetMatch "footer.jpg" }}
+    {{ with .Resources.GetMatch "footer-summer.jpg" }}
       {{ $imageSmall := .Resize "500x" }}
       {{ $imageMedium := .Resize "1000x" }}
       {{ $imageBig := .Resize "2000x" }}
@@ -18,6 +18,21 @@
         srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
         data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
         data-sizes="auto"
+        data-season="summer"
+        class="c-footer__img lazyload" />
+    {{ end }}
+    {{ with .Resources.GetMatch "footer-winter.jpg" }}
+      {{ $imageSmall := .Resize "500x" }}
+      {{ $imageMedium := .Resize "1000x" }}
+      {{ $imageBig := .Resize "2000x" }}
+
+      <img
+        alt="Footer"
+        src="{{ $imageSmall.RelPermalink }}"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+        data-sizes="auto"
+        data-season="winter"
         class="c-footer__img lazyload" />
     {{ end }}
   </div>

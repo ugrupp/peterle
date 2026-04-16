@@ -1,5 +1,10 @@
 <!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
+{{- $month := int now.Month -}}
+{{- $serverSeason := "summer" -}}
+{{- if or (ge $month 10) (le $month 3) -}}
+  {{- $serverSeason = "winter" -}}
+{{- end -}}
+<html lang="{{ $.Site.Language.Lang }}" data-server-season="{{ $serverSeason }}">
   <head>
     {{/* Meta tags */}}
     {{ partial "global/meta.html" . }}

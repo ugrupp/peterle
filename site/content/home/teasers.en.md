@@ -1,7 +1,8 @@
 ---
 teasers:
 - title: Peterle
-  image: teaser-peterle.jpg
+  image: teaser-peterle-summer.jpg
+  imageWinter: teaser-peterle-winter.jpg
   url: /en/peterle/
   fixedHeight: true
 - title: Our Rooms

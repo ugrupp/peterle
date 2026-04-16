@@ -1,7 +1,8 @@
 ---
 teasers:
 - title: Das Peterle
-  image: teaser-peterle.jpg
+  image: teaser-peterle-summer.jpg
+  imageWinter: teaser-peterle-winter.jpg
   url: /das-peterle/
   fixedHeight: true
 - title: Wohnen

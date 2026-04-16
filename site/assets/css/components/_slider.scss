@@ -23,4 +23,91 @@
 .c-slidercount__inner {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: rem(30px);
+}
+
+// Season switcher buttons
+.c-season-toggles {
+  display: flex;
+  align-items: center;
+  gap: rem(10px);
+}
+
+.c-season-toggle {
+  width: rem(32px);
+  height: rem(32px);
+  flex-shrink: 0;
+  cursor: pointer;
+
+  @include mappy-bp(sm) {
+    width: rem(42px);
+    height: rem(42px);
+  }
+
+  .c-season-toggle__icon--active {
+    display: none;
+  }
+
+  &.is-active {
+    .c-season-toggle__icon--inactive {
+      display: none;
+    }
+
+    .c-season-toggle__icon--active {
+      display: inline;
+    }
+  }
+}
+
+.c-season-toggle__icon {
+  width: 100%;
+  height: 100%;
+}
+
+// Season switcher
+[data-slider-season="summer"],
+[data-season="summer"] {
+  display: block;
+}
+
+[data-slider-season="winter"],
+[data-season="winter"] {
+  display: none;
+}
+
+[data-server-season="winter"] {
+  [data-slider-season="summer"],
+  [data-season="summer"] {
+    display: none;
+  }
+
+  [data-slider-season="winter"],
+  [data-season="winter"] {
+    display: block;
+  }
+}
+
+[data-active-season="winter"] {
+  [data-slider-season="summer"],
+  [data-season="summer"] {
+    display: none;
+  }
+
+  [data-slider-season="winter"],
+  [data-season="winter"] {
+    display: block;
+  }
+}
+
+[data-active-season="summer"] {
+  [data-slider-season="winter"],
+  [data-season="winter"] {
+    display: none;
+  }
+
+  [data-slider-season="summer"],
+  [data-season="summer"] {
+    display: block;
+  }
 }

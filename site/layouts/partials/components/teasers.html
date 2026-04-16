@@ -21,6 +21,7 @@
             <div class="c-teaser__img-wrapper">
               {{/* Single image */}}
               {{ if index . "image" }}
+                {{ $imageWinter := index . "imageWinter" }}
                 {{ with $.Resources.GetMatch .image }}
                   {{ $imageSmall := .Resize "500x" }}
                   {{ $imageMedium := .Resize "800x" }}
@@ -31,7 +32,23 @@
                     srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                     data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
                     data-sizes="auto"
+                    {{ if $imageWinter }}data-season="summer"{{ end }}
                     class="c-teaser__img lazyload" />
+                {{ end }}
+                {{ if $imageWinter }}
+                  {{ with $.Resources.GetMatch $imageWinter }}
+                    {{ $imageSmall := .Resize "500x" }}
+                    {{ $imageMedium := .Resize "800x" }}
+
+                    <img
+                      alt="{{ $title }}"
+                      src="{{ $imageSmall.RelPermalink }}"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 800w"
+                      data-sizes="auto"
+                      data-season="winter"
+                      class="c-teaser__img lazyload" />
+                  {{ end }}
                 {{ end }}
 
               {{/* Gallery / Fading images */}}

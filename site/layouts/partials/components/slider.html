@@ -1,7 +1,18 @@
-<div class="c-slider swiper-container" data-slider>
+<div class="c-slider swiper-container" data-slider data-slider-season="summer">
   <div class="swiper-wrapper">
     {{$baseContext := .}}
-    {{ range .Resources.Match "slides/slide-*.jpg" }}
+    {{ range .Resources.Match "slides/slide-*-summer.jpg" }}
+      <div class="swiper-slide">
+        {{ partial "components/hero" (dict "context" $baseContext "outer" $ "image" . "slide" 1) }}
+      </div>
+    {{end}}
+  </div>
+</div>
+
+<div class="c-slider swiper-container" data-slider data-slider-season="winter">
+  <div class="swiper-wrapper">
+    {{$baseContext := .}}
+    {{ range .Resources.Match "slides/slide-*-winter.jpg" }}
       <div class="swiper-slide">
         {{ partial "components/hero" (dict "context" $baseContext "outer" $ "image" . "slide" 1) }}
       </div>
